@@ -1,0 +1,10 @@
+.solutions {
+  position: relative;
+  padding: 90px 0 44px;
+}
+
+@media screen and (max-width:768px) {
+  .solutions {
+    padding: 64px 0 48px;
+  }
+}

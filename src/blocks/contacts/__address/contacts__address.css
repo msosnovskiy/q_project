@@ -1,0 +1,33 @@
+.contacts__address {
+  max-width: 526px;
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.contacts__address::after {
+  content: "";
+  width: 100%;
+  border-radius: 50%;
+  height: 2px;
+  background: rgba(240, 245, 243, 0.2);
+  position: absolute;
+  left: 0;
+  bottom: -31px;
+}
+
+.contacts__address:last-of-type:after {
+  display: none;
+}
+
+.contacts__address:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width:860px) {
+  .contacts__address {
+    margin-bottom: 48px;
+  }
+  .contacts__address::after {
+    bottom: -23px;
+  }
+}

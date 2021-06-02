@@ -1,0 +1,13 @@
+@import url(./__slider/reviews__slider.css);
+@import url(./__image/reviews__image.css);
+
+.reviews {
+  padding: 90px 0 52px;
+  position: relative;
+}
+
+@media screen and (max-width:768px) {
+  .reviews {
+    padding-top: 64px;
+  }
+}

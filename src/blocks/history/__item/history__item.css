@@ -1,0 +1,60 @@
+.history__item {
+  text-align: right;
+  width: 50%;
+  padding-right: 28px;
+}
+
+/* распологаем справа каждый второй элемент */
+.history__item:nth-child(2n) {
+  text-align: left;
+  margin-right: 0;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 28px;
+}
+
+/* распологаем квадрат слева у каждого четного элемента */
+.history__item:nth-child(2n) .history__date::after {
+  left: -36px;
+}
+
+/* распологаем линию слева у каждого четного элемента */
+.history__item:nth-child(2n) .history__text::after {
+  left: -29px;
+}
+
+/* закрашиваем квадрат первого элемента */
+.history__item:first-child .history__date::after {
+  background-color: #009966;
+  border: 2px solid #009966;
+}
+
+/* закрашиваем квадрат последнего элемента */
+.history__item:last-child .history__date::after {
+  background-color: #009966;
+  border: 2px solid #009966;
+}
+
+/* убираем линию с последнего элемента */
+.history__item:last-child .history__text::after {
+  background: none;
+}
+
+@media screen and (max-width:740px) {
+  .history__item {
+    width: 100%;
+    text-align: left;
+    margin-right: 0;
+    margin-left: auto;
+    padding-left: 38px;
+  }
+  .history__item:nth-child(2n) {
+    padding-left: 38px;
+  }
+  .history__item:nth-child(1n) .history__date::after {
+    left: -36px;
+  }
+  .history__item:nth-child(1n) .history__text::after {
+    left: -30px;
+  }
+}

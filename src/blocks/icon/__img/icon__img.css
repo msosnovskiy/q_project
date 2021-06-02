@@ -1,0 +1,18 @@
+.icon__img {
+  width: 120px;
+  margin: 14px;
+  transition-duration: .25s;
+}
+
+@media screen and (max-width:1263px) {
+  .icon__img {
+    width: 140px;
+    margin: 14px 8px 0;
+  }
+}
+
+@media screen and (max-width:660px) {
+  .icon__img {
+    width: 160px;
+  }
+}

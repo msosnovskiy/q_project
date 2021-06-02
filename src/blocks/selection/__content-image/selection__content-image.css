@@ -1,0 +1,19 @@
+.selection__content-image {
+  grid-column: 1;
+  grid-row: 1 / 20;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  padding-right: 48px;
+}
+
+@media screen and (max-width:1024px) {
+  .selection__content-image  {
+    grid-column: 1;
+    grid-row: 2;
+    padding-right: 0;
+    padding-bottom: 32px;
+    max-height: 576px;
+    object-position: center;
+  }
+}

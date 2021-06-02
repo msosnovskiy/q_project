@@ -1,0 +1,31 @@
+@keyframes opacity {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+};
+
+
+.background_black {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 20px;
+}
+
+.background_black::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: rgba(1, 1, 1, 0.8);
+  animation: opacity 0.25s cubic-bezier(.45,.05,.55,.95) forwards;
+  color: #101010;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}

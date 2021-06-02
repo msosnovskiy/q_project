@@ -1,0 +1,72 @@
+@keyframes hoverbutton {
+  0% {
+    background-color: #009966;
+    color: #fff;
+  }
+  100% {
+    background-color: transparent;
+    color: #009966;
+  }
+}
+
+.button {
+  color: #fff;
+  width: 100%;
+  max-width: 200px;
+  min-height: 48px;
+  display: inline-block;
+  padding: 12px;
+  background-color: #009966;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #009966;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.button:hover {
+  animation: hoverbutton 0.2s ease-in forwards;
+}
+
+.button_header {
+  display: inline;
+  padding: 8px 28px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 16px;
+}
+
+.button_header:last-of-type {
+  margin-right: 0;
+}
+
+.button_small {
+  max-width: 128px;
+  min-height: 36px;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+@media screen and (max-width:960px) {
+  .button_header {
+    width: 80%;
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:580px) {
+  .button{
+    max-width: 80%;
+    font-size: 18px;
+  }
+  .button_header {
+    max-width: 100%;
+  }
+
+}

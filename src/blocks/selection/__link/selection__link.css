@@ -1,0 +1,31 @@
+.selection__link {
+  min-height: 80px;
+  text-decoration: none;
+  color: #009966;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+  padding: 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selection__link:hover {
+  background-color: #F0F5F3;
+  transition-duration: .25s;
+}
+
+.selection__link.selection__link_active {
+  background-color: #009966;
+  color: #fff;
+}
+
+@media screen and (max-width:1024px) {
+  .selection__link {
+    min-height: 68px;
+    background-color: #f0f5f3;
+  }
+}
+

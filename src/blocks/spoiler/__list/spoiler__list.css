@@ -1,0 +1,17 @@
+.spoiler__list {
+  width: 100%;
+  margin: 4px 0;
+  padding-left: 24px;
+  position: relative;
+}
+
+.spoiler__list::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #009966;
+  border-radius: 50%;
+  top: 6px;
+  left: 0;
+  position: absolute;
+}

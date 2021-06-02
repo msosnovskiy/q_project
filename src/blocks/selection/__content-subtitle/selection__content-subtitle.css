@@ -1,0 +1,11 @@
+.selection__content-subtitle {
+  grid-column: 2;
+  margin: 12px 0 2px;
+  font-weight: 500;
+}
+
+@media screen and (max-width:1024px) {
+  .selection__content-subtitle  {
+    grid-column: 1;
+  }
+}

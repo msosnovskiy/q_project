@@ -1,0 +1,13 @@
+.work__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 60px;
+}
+
+@media screen and (max-width:1024px) {
+  .work__content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 28px;
+  }
+}

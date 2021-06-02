@@ -1,0 +1,37 @@
+.partners__link {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  min-height: 120px;
+  padding: 16px;
+  border-right: 2px solid #DADEDC;
+  border-bottom: 2px solid #DADEDC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+/* каждый 4-й */
+.partners__link:nth-of-type(4n) {
+  border-right: none;
+}
+/* последние 4 элемента */
+.partners__link:nth-last-child(-n+4) {
+  border-bottom: none;
+}
+
+@media screen and (max-width:1200px) {
+  /* каждый 2-й */
+  .partners__link:nth-of-type(2n) {
+    border-right: none;
+  }
+  /* последние 4 элемента */
+  .partners__link:nth-last-child(-n+4) {
+    border-bottom: 2px solid #DADEDC;
+  }
+  /* последние 2 элемента */
+  .partners__link:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+}

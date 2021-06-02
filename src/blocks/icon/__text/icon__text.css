@@ -1,0 +1,12 @@
+.icon__text {
+  max-width: 208px;
+  margin: 14px auto;
+  color: #101010;
+  font-weight: 400 ;
+}
+
+@media screen and (max-width:1263px) {
+  .icon__text {
+    /* max-width: 100%; */
+  }
+}

@@ -1,0 +1,12 @@
+.spoiler__content {
+  padding-bottom: 28px;
+  display: none;
+}
+
+.spoiler__content_white {
+  padding: 0 32px 28px;
+}
+
+.spoiler__content_visible {
+  display: block;
+}

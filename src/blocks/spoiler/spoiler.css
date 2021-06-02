@@ -1,0 +1,15 @@
+@import url(./__item/spoiler__item.css);
+@import url(./__wrapper/spoiler__wrapper.css);
+@import url(./__title/spoiler__title.css);
+@import url(./__button/spoiler__button.css);
+@import url(./__content/spoiler__content.css);
+@import url(./__text/spoiler__text.css);
+@import url(./__subtitle/spoiler__subtitle.css);
+@import url(./__list/spoiler__list.css);
+
+.spoiler {
+  max-width: 1024px;
+  width: 100%;
+  margin: 64px auto 0;
+  grid-column: 1 / -1;
+}

@@ -1,0 +1,14 @@
+.customers__name {
+  margin: 12px auto 0;
+  font-size: 14px;
+  text-align: center;
+  max-width: 200px;
+  min-height: 52px;
+}
+
+@media screen and (max-width:580px) {
+  .customers__name {
+    max-width: 60%;
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,27 @@
+@import url(./__list/selection__list.css);
+@import url(./__list-item/selection__list-item.css);
+@import url(./__link/selection__link.css);
+
+@import url(./__content/selection__content.css);
+@import url(./__content-item/selection__content-item.css);
+@import url(./__content-title/selection__content-title.css);
+@import url(./__content-image/selection__content-image.css);
+@import url(./__content-subtitle/selection__content-subtitle.css);
+@import url(./__content-text/selection__content-text.css);
+@import url(./__content-list/selection__content-list.css);
+@import url(./__content-button/selection__content-button.css);
+
+@import url(./__news-item/selection__news-item.css);
+@import url(./__news-date/selection__news-date.css);
+@import url(./__news-text/selection__news-text.css);
+
+.selection {
+  padding: 90px 0;
+  position: relative;
+}
+
+@media screen and (max-width:768px) {
+  .selection {
+    padding: 64px 0;
+  }
+}

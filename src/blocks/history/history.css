@@ -1,0 +1,15 @@
+@import url(./__content/history__content.css);
+@import url(./__item/history__item.css);
+@import url(./__date/history__date.css);
+@import url(./__text/history__text.css);
+
+.history {
+  padding: 90px 0;
+}
+
+@media screen and (max-width:740px) {
+  .history {
+    padding: 64px 0 40px;
+  }
+}
+

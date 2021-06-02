@@ -1,0 +1,9 @@
+.selection__list-item {
+  width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+  .selection__list-item {
+    margin: 4px;
+  }
+}

@@ -1,0 +1,10 @@
+.spoiler__subtitle {
+  font-size: 18px;
+  width: 100%;
+  font-weight: 500;
+  margin: 24px 0 8px;
+}
+
+.spoiler__subtitle:first-child {
+  margin: 0 0 24px;
+}

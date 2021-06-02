@@ -1,0 +1,50 @@
+@keyframes hover {
+  0% {
+    background-color: none;
+  }
+  100% {
+    background-color: #e1e2e1;
+  }
+}
+
+.header__link {
+  text-decoration: none;
+  color: #009966;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 32px 16px;
+}
+
+.header__link_active {
+  width: 100%;
+  position: relative;
+}
+
+.header__link_active::after {
+  content: "";
+  width: calc(100% - 32px);
+  height: 2px;
+  background-color: #009966;
+  position: absolute;
+  bottom: 28px;
+  left: 16px;
+}
+
+.header__link:hover {
+  animation: hover 0.2s ease-in forwards;
+}
+
+
+.header__link:focus {
+  animation: hover 0.2s ease-in forwards;
+}
+
+@media screen and (max-width:960px) {
+  .header__link {
+    padding: 8px 16px;
+  }
+  .header__link_active::after {
+    bottom: 4px;
+  }
+}
+

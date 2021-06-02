@@ -1,0 +1,8 @@
+.work__item {
+  height: 100%;
+}
+
+.work__item_green {
+  padding: 32px 22px;
+  background-color: #009966;
+}

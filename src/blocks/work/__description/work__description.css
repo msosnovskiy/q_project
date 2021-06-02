@@ -1,0 +1,13 @@
+.work__description {
+  width: 80%;
+  margin: 16px auto 0;
+  font-weight: 500;
+  text-align: center;
+  color: #101010;
+}
+
+@media screen and (max-width:1024px) {
+  .work__description {
+    width: 100%;
+  }
+}

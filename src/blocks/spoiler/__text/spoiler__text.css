@@ -1,0 +1,8 @@
+.spoiler__text {
+  width: 100%;
+  margin: 16px auto 8px;
+}
+
+.spoiler__text:first-of-type {
+  margin-top: 0;
+}

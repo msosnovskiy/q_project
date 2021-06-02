@@ -1,0 +1,26 @@
+@import url(./__content/work__content.css);
+@import url(./__image/work__image.css);
+@import url(./__item/work__item.css);
+@import url(./__title/work__title.css);
+@import url(./__subtitle/work__subtitle.css);
+@import url(./__text/work__text.css);
+@import url(./__list/work__list.css);
+@import url(./__description/work__description.css);
+
+.work {
+  padding: 80px 0 90px;
+  margin-top: 60px;
+}
+
+@media screen and (max-width:1024px) {
+  .work {
+    margin-top: 36px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .work {
+    margin-top: 24px;
+    padding-bottom: 64px;
+  }
+}

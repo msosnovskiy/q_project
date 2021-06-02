@@ -1,0 +1,13 @@
+@import url(./__text/vacancies__text.css);
+
+.vacancies {
+  padding: 90px 0;
+  position: relative;
+}
+
+
+@media screen and (max-width:768px) {
+  .vacancies {
+    padding: 64px 0;
+  }
+}

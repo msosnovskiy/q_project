@@ -1,0 +1,62 @@
+.menu-icon-wrapper {
+  margin: 10px 0 10px 10px;
+  width: 32px;
+  height: 32px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+}
+
+.menu-icon {
+  width: 32px;
+  height: 3px;
+  background-color: #009966;
+  position: relative;
+  transition: background-color 0.1s ease-in;
+}
+
+.menu-icon::before {
+  content: '';
+  width: 32px;
+  height: 3px;
+  background-color: #009966;
+  position: absolute;
+  transition: transform .1s ease-in, top .1s linear .1s;
+  top: -9px;
+  left: 0;
+}
+
+.menu-icon::after {
+  content: '';
+  width: 32px;
+  height: 3px;
+  background-color: #009966;
+  position: absolute;
+  transition: transform .1s ease-in, top .1s linear .1s;
+  top: 9px;
+  left: 0;
+}
+
+.menu-icon.menu-icon__active {
+  background-color: transparent;
+}
+
+.menu-icon.menu-icon__active::before {
+  transform: rotate(45deg);
+  top: 0;
+  transition: top .1s linear, transform .1s ease-in .1s;
+}
+
+.menu-icon.menu-icon__active::after {
+  transform: rotate(-45deg);
+  top: 0;
+  transition: top .1s linear, transform .1s ease-in .1s;
+}
+
+@media screen and (max-width:960px) {
+  .menu-icon-wrapper {
+    display: flex;
+  }
+}

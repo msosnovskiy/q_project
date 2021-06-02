@@ -1,0 +1,13 @@
+.work__image {
+  background-image: url(../../../images/career.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (max-width:1024px) {
+  .work__image {
+    height: 400px;
+  }
+}

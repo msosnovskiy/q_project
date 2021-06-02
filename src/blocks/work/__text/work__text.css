@@ -1,0 +1,12 @@
+.work__text {
+  font-weight: 300;
+  margin: 16px 0 8px;
+}
+
+.work__text_white {
+  color: #fff;
+}
+
+.work__text:last-of-type {
+  margin-bottom: 0;
+}

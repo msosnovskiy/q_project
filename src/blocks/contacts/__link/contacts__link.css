@@ -1,0 +1,11 @@
+.contacts__link {
+  margin: 0 auto 4px;
+  color: #fefefe;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.contacts__link:hover {
+  letter-spacing: 1px;
+  font-weight: 500;
+}

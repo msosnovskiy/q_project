@@ -1,0 +1,60 @@
+.background_img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -120px;
+  margin-right: -120px;
+  width: 100%;
+  min-height: 592px;
+  padding: 140px 120px 60px;
+  width: calc(100% + 240px);
+}
+
+.background_img_index {
+  background-image: url(../../../images/main.jpg);
+}
+
+.background_img_about {
+  background-image: url(../../../images/about.jpg);
+}
+
+.background_img_solutions {
+  background-image: url(../../../images/solutions.jpg);
+}
+
+.background_img_services {
+  background-image: url(../../../images/services.jpg);
+}
+
+.background_img_news {
+  background-image: url(../../../images/news.jpg);
+}
+
+
+@media screen and (max-width:1200px) {
+  .background_img {
+    width: calc(100% + 160px);
+    margin-left: -80px;
+    margin-right: -80px;
+    padding: 120px 80px 40px;
+    min-height: 540px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .background_img {
+    width: calc(100% + 80px);
+    margin-left: -40px;
+    margin-right: -40px;
+    padding: 120px 40px 40px;
+    min-height: 500px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .background_img {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 120px 20px 40px;
+  }
+}

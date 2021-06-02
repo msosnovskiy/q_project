@@ -1,0 +1,17 @@
+@import url(./__content/news__content.css);
+@import url(./__item/news__item.css);
+@import url(./__date/news__date.css);
+@import url(./__text/news__text.css);
+
+.news {
+  padding: 90px 0;
+  position: relative;
+  text-align: center;
+}
+
+
+@media screen and (max-width:768px) {
+  .news {
+    padding: 64px 0;
+  }
+}

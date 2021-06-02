@@ -1,0 +1,39 @@
+.customers__container {
+  display: grid;
+  margin: 75px auto 60px;
+  max-width: 1200px;
+  width: 90%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 24px;
+}
+
+@media screen and (max-width:1160px) {
+  .customers__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .customers__container {
+    margin: 48px auto;
+  }
+}
+
+@media screen and (max-width:840px) {
+  .customers__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .customers__container {
+    margin-top: 48px;
+  }
+}
+
+@media screen and (max-width:540px) {
+  .customers__container {
+    grid-row-gap: 12px;
+  }
+}

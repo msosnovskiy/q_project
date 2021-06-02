@@ -1,0 +1,18 @@
+.selection__content-button {
+  margin: 12px 0;
+  grid-column: 2;
+}
+
+.selection__content-button:first-of-type {
+  margin-top: 32px;
+}
+
+.selection__content-button:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width:1024px) {
+  .selection__content-button  {
+    grid-column: 1;
+  }
+}

@@ -1,0 +1,30 @@
+.slider__touch-img {
+  position: relative;
+  margin: 0 0 0 auto;
+  display: none;
+  height: 40px;
+}
+
+.slider__touch-img::after {
+  content: "";
+  background-image: url(../../../images/hand_n.svg);
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 42px;
+  position: absolute;
+  /* top: -6px; */
+/* top: 0; */
+  right: 0;
+}
+
+@media screen and (max-width:680px) {
+  .slider__touch-img_customers  {
+    display: block;
+  }
+}
+
+@media screen and (max-width:540px) {
+  .slider__touch-img_reviews  {
+    display: block;
+  }
+}

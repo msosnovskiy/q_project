@@ -1,0 +1,12 @@
+.history__content {
+  padding-top: 43px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:740px) {
+  .history__content {
+    padding-top: 24px;
+  }
+}

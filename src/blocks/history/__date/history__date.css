@@ -1,0 +1,18 @@
+.history__date {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  margin: 0px auto 12px;
+  position: relative;
+}
+
+.history__date::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #009966;
+  border-radius: 2px;
+  position: absolute;
+  top: 2px;
+  right: -36px;
+}

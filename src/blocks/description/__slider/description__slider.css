@@ -1,0 +1,15 @@
+.description__slider {
+  cursor: default;
+  height: 100%;
+}
+
+.description__slider .slick-slide {
+  margin-bottom: 32px;
+}
+
+
+@media screen and (max-width:768px) {
+  .description__slider .slick-slide {
+    margin-bottom: 24px;
+  }
+}

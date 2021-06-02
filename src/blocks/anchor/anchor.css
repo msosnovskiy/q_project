@@ -1,0 +1,12 @@
+.anchor {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: -170px;
+}
+
+@media screen and (max-width:768px) {
+  .anchor {
+    top: -144px;
+  }
+}

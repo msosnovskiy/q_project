@@ -1,0 +1,32 @@
+.contacts__map {
+  margin-left: -120px;
+  width: calc(100% + 120px);
+  background-color: #009966;
+}
+
+@media screen and (max-width:1200px) {
+  .contacts__map {
+    width: calc(100% + 80px);
+    margin-left: -80px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .contacts__map {
+    width: calc(100% + 40px);
+    margin-left: -40px;
+  }
+}
+
+@media screen and (max-width:740px) {
+  .contacts__map {
+    width: 100%;
+    margin-left: -40px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .contacts__map {
+    margin-left: -20px;
+  }
+}

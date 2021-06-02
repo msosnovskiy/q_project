@@ -1,0 +1,21 @@
+.partners__content {
+  width: 100%;
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width:1200px) {
+  .partners__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .partners__content  {
+    margin-top: 48px;
+  }
+}

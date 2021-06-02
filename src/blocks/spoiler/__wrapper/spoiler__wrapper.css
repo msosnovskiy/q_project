@@ -1,0 +1,27 @@
+.spoiler__wrapper {
+  padding: 28px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.spoiler__wrapper:hover .spoiler__button {
+  background-color: #009966;
+  border: 2px solid #009966;
+}
+
+.spoiler__wrapper:hover .spoiler__button:before {
+  background-color: #f0f5f3;
+}
+.spoiler__wrapper:hover .spoiler__button::after {
+  background-color: #f0f5f3;
+}
+
+.spoiler__wrapper_white {
+  padding: 28px 32px;
+}
+
+
+

@@ -1,0 +1,6 @@
+.contacts__name {
+  max-width: 460px;
+  font-weight: 500;
+  margin: 0 auto 12px 0;
+  text-align: left;
+}

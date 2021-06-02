@@ -1,0 +1,33 @@
+.work__list {
+  margin: 8px 0;
+  font-weight: 300;
+  padding-left: 24px;
+  position: relative;
+}
+
+.work__list::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #009966;
+  border-radius: 50%;
+  top: 6px;
+  left: 0;
+  position: absolute;
+}
+
+.work__list_white {
+  color: #fff;
+}
+
+
+.work__list_white::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 6px;
+  left: 0;
+  position: absolute;
+}

@@ -1,0 +1,7 @@
+.selection__content {
+  display: none;
+}
+
+.selection__content_visible {
+  display: block;
+}

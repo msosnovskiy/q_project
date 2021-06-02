@@ -1,0 +1,26 @@
+@import url(./__content/icon__content.css);
+@import url(./__img/icon__img.css);
+@import url(./__text/icon__text.css);
+
+
+.icon {
+  margin: 39px auto 0;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+}
+
+@media screen and (max-width:1263px) {
+  .icon {
+    max-width: 85%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width:660px) {
+  .icon {
+    max-width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

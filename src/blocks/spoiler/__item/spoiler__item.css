@@ -1,0 +1,30 @@
+.spoiler__item {
+  position: relative;
+  width: 100%;
+}
+
+.spoiler__item::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #F0F5F3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.spoiler__item:last-of-type::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #F0F5F3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.spoiler__item_white {
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}

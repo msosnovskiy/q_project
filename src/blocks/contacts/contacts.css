@@ -1,0 +1,25 @@
+@import url(./__map/contacts__map.css);
+@import url(./__content/contacts__content.css);
+@import url(./__address/contacts__address.css);
+@import url(./__name/contacts__name.css);
+@import url(./__description/contacts__description.css);
+@import url(./__link/contacts__link.css);
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  color: #fefefe;
+  font-size: 20px;
+}
+
+@media screen and (max-width:740px) {
+  .contacts {
+    grid-template-columns: repeat(1, calc(100% + 80px));
+  }
+}
+
+@media screen and (max-width:480px) {
+  .contacts {
+    grid-template-columns: repeat(1, calc(100% + 40px));
+  }
+}

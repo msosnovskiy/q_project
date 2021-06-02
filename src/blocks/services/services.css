@@ -1,0 +1,11 @@
+.services {
+  position: relative;
+  padding: 90px 0 64px;
+}
+
+
+@media screen and (max-width:768px) {
+  .services {
+    padding: 64px 0 48px;
+  }
+}

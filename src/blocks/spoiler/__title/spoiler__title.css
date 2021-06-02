@@ -1,0 +1,12 @@
+.spoiler__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  padding-right: 32px;
+  text-align: left;
+  margin: 0;
+}
+
+.spoiler__title_green {
+  color: #009966;
+}

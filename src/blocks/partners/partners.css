@@ -1,0 +1,14 @@
+@import url(./__content/partners__content.css);
+@import url(./__link/partners__link.css);
+@import url(./__logo/partners__logo.css);
+
+.partners {
+  padding: 90px 0;
+  position: relative;
+}
+
+@media screen and (max-width:768px) {
+  .partners {
+    padding: 64px 0;
+  }
+}

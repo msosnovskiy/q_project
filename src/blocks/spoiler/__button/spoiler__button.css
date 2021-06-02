@@ -1,0 +1,52 @@
+.spoiler__button {
+  min-width: 32px;
+  min-height: 32px;
+  background-color: #F0F5F3;
+  border: 2px solid #F0F5F3;
+  border-radius: 4px;
+  padding: 2px;
+  margin: 0;
+  position: relative;
+  align-self: center;
+  transition-duration: .2s;
+  cursor: pointer;
+}
+
+.spoiler__button::before {
+  content: "";
+  width: 22px;
+  height: 2px;
+  background-color: #009966;
+  position: absolute;
+  left: 3px;
+  top: 13px;
+  transition-duration: .2s;
+}
+
+.spoiler__button::after {
+  content: "";
+  width: 22px;
+  height: 2px;
+  background-color: #009966;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 3px;
+  top: 13px;
+  transition-duration: .2s;
+}
+
+.spoiler__button.spoiler__button_active {
+  background-color: #009966;
+  border: 2px solid #009966;
+}
+
+.spoiler__button.spoiler__button_active::before {
+  transform: rotate(45deg);
+  background-color: #F0F5F3;
+}
+
+.spoiler__button.spoiler__button_active::after {
+    transform: rotate(135deg);
+    background-color: #F0F5F3;
+}
+

@@ -1,0 +1,87 @@
+@import url(./__touch-img/slider__touch-img.css);
+
+.slider {
+
+}
+
+/* сладер */
+.slick-slider {
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Слайд */
+.slick-slide {
+  outline: none;
+}
+
+/* Слайд активный */
+.slick-slide.slick-active {}
+
+/* слайд основной */
+.slick-slide.slick-current {}
+
+/* слайд по центру */
+.slick-slide.slick-center {}
+
+/* стрелка */
+.slick-arrow {
+  width: 44px;
+  height: 100%;
+  cursor: pointer;
+  outline: none;
+  font-size: 0;
+}
+
+/* стрелка влево */
+.slick-arrow.slick-prev {
+}
+
+/* стрелка вправо */
+.slick-arrow.slick-next {
+}
+
+
+/* стрелка не активная */
+.slick-arrow.slick-disabled {}
+
+/* точки */
+.slick-dots {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-dots li {
+  list-style: none;
+}
+
+.slick-dots button {
+  cursor: pointer;
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  margin: 8px;
+  border-radius: 50%;
+  border: none;
+  background-color: #CCCCCC;
+  outline: none;
+}
+
+.slick-dots li.slick-active button{
+  background-color: #009966;
+}
+
+
