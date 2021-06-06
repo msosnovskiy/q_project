@@ -5,16 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quarta</title>
-  <link rel="stylesheet" href="pages/index.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="preload" as="image" href="images/main.jpg" />
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <link rel="apple-touch-icon" sizes="180x180" href="<%=require('./images/apple-touch-icon.png')%>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%=require('./images/favicon-32x32.png')%>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<%=require('./images/favicon-16x16.png')%>">
+  <link rel="mask-icon" href="<%=require('./images/safari-pinned-tab.svg')%>" color="#5bbad5">
+  <link rel="preload" as="image" href="<%=require('./images/main.jpg')%>">
   <meta name="description"
     content="Компания «Кварта» осуществляет деятельность, связанную с предоставлением услуг в области информационных технологий и системной интеграции.">
   <meta name="author" content="Максим Сосновский">
 </head>
+
 
 <body class="root">
   <div class="page">
@@ -52,19 +53,19 @@
         <h2 class="title">решения</h2>
         <div class="icon">
           <a href="solutions.html#personnel" class="icon__content">
-            <img src="images/personnel.svg" alt="иконка" class="icon__img">
+            <img src="<%=require('./images/personnel.svg')%>" alt="иконка" class="icon__img">
             <p class="icon__text">Управление персоналом</p>
           </a>
           <a href="solutions.html#finance" class="icon__content">
-            <img src="images/finance.svg" alt="иконка" class="icon__img">
+            <img src="<%=require('./images/finance.svg')%>" alt="иконка" class="icon__img">
             <p class="icon__text">Управление<span class="span span_br"></span>финансами</p>
           </a>
           <a href="solutions.html#resources" class="icon__content">
-            <img src="images/resources.svg" alt="иконка" class="icon__img">
+            <img src="<%=require('./images/resources.svg')%>" alt="иконка" class="icon__img">
             <p class="icon__text">Управление<span class="span span_br"></span>ресурсами</p>
           </a>
           <a href="solutions.html#analytics" class="icon__content">
-            <img src="images/analytics.svg" alt="иконка" class="icon__img">
+            <img src="<%=require('./images/analytics.svg')%>" alt="иконка" class="icon__img">
             <p class="icon__text">Аналитика</p>
           </a>
         </div>
@@ -95,19 +96,19 @@
         <h2 class="title">услуги</h2>
         <div class="icon">
           <a href="services.html#development" class="icon__content">
-            <img src="images/development.svg" alt="иконка" class="icon__img">
+            <img src="<%=require('./images/development.svg')%>" alt="иконка" class="icon__img">
             <p class="icon__text">Разработка и внедрение</p>
           </a>
           <a href="services.html#outsourcing" class="icon__content">
-            <img src="images/outsourcing.svg" alt="иконка" class="icon__img">
+            <img src="<%=require('./images/outsourcing.svg')%>" alt="иконка" class="icon__img">
             <p class="icon__text">Аутсорсинг IT инфраструктуры</p>
           </a>
           <a href="services.html#integration" class="icon__content">
-            <img src="images/integration.svg" alt="иконка" class="icon__img">
+            <img src="<%=require('./images/integration.svg')%>" alt="иконка" class="icon__img">
             <p class="icon__text">Системная&nbsp;интеграция и дистрибуция</p>
           </a>
           <a href="services.html#protection" class="icon__content">
-            <img src="images/protection.svg" alt="иконка" class="icon__img">
+            <img src="<%=require('./images/protection.svg')%>" alt="иконка" class="icon__img">
             <p class="icon__text">Внедрение средств защиты&nbsp;информации</p>
           </a>
         </div>
@@ -121,35 +122,35 @@
         <div class="customers__slider">
           <div class="customers__item">
             <!-- <img data-lazy="images/aprf.jpg" alt="Аппарат Правительства" class="customers__image"> -->
-            <img src="images/aprf.jpg" alt="Аппарат Правительства" class="customers__image">
+            <img src="<%=require('./images/aprf.jpg')%>" alt="Аппарат Правительства" class="customers__image">
             <p class="customers__name">Аппарат Правительства Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="images/sf.jpg" alt="Совет Федерации" class="customers__image">
+            <img src="<%=require('./images/sf.jpg')%>" alt="Совет Федерации" class="customers__image">
             <p class="customers__name">Совет Федерации Федерального Собрания Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="images/gd.jpg" alt="Государственная Дума" class="customers__image">
+            <img src="<%=require('./images/gd.jpg')%>" alt="Государственная Дума" class="customers__image">
             <p class="customers__name">Государственная Дума Федерального Собрания Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="images/ud.jpg" alt="Управление делами Президента" class="customers__image">
+            <img src="<%=require('./images/ud.jpg')%>" alt="Управление делами Президента" class="customers__image">
             <p class="customers__name">Управление делами Президента Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="images/mid.jpg" alt="Министерство иностранных дел" class="customers__image">
+            <img src="<%=require('./images/mid.jpg')%>" alt="Министерство иностранных дел" class="customers__image">
             <p class="customers__name">Министерство иностранных дел Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="images/minsv.jpg" alt="Министерство связи" class="customers__image">
+            <img src="<%=require('./images/minsv.jpg')%>" alt="Министерство связи" class="customers__image">
             <p class="customers__name">Министерство связи и массовых коммуникаций Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="images/mer.jpg" alt="Министерство экономического развития" class="customers__image">
+            <img src="<%=require('./images/mer.jpg')%>" alt="Министерство экономического развития" class="customers__image">
             <p class="customers__name">Министерство экономического развития Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="images/mintrans.jpg" alt="Министерство транспорта" class="customers__image">
+            <img src="<%=require('./images/mintrans.jpg')%>" alt="Министерство транспорта" class="customers__image">
             <p class="customers__name">Министерство транспорта Российской Федерации</p>
           </div>
         </div>
@@ -189,13 +190,13 @@
       <div class="container">
         <h2 class="title">наши партнеры</h2>
         <div class="partners__content">
-          <a href="#" class="partners__link"><img src="images/infotecs.png" alt="логотип Инфотекс"
+          <a href="#" class="partners__link"><img src="<%=require('./images/infotecs.png')%>" alt="логотип Инфотекс"
               class="partners__logo"></a>
-          <a href="#" class="partners__link"><img src="images/microsoft.png" alt="логотип Микрософт"
+          <a href="#" class="partners__link"><img src="<%=require('./images/microsoft.png')%>" alt="логотип Микрософт"
               class="partners__logo"></a>
-          <a href="#" class="partners__link"><img src="images/smp.png" alt="логотип СМП банка"
+          <a href="#" class="partners__link"><img src="<%=require('./images/smp.png')%>" alt="логотип СМП банка"
               class="partners__logo"></a>
-          <a href="#" class="partners__link"><img src="images/1c.png" alt="логотип 1С" class="partners__logo"></a>
+          <a href="#" class="partners__link"><img src="<%=require('./images/1c.png')%>" alt="логотип 1С" class="partners__logo"></a>
         </div>
       </div>
     </section>
@@ -299,8 +300,8 @@
 
     <script src="js/vendor/jquery.min.js" type="text/javascript"></script>
     <script src="js/vendor/slick.min.js" type="text/javascript"></script>
-    <script src="js/utils/slider.js" type="text/javascript"></script>
-    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/vendor/slider.config.js" type="text/javascript"></script>
+    <script src="<%= htmlWebpackPlugin.files.js %>" type="text/javascript"></script>
   </div>
 </body>
 
