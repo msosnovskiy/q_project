@@ -1,3 +1,5 @@
+import '../pages/solutions.css';
+
 const selection = document.querySelector('.selection');
 const anchors = selection.querySelectorAll('a[href*="#"]')
 

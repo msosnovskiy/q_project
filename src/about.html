@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quarta</title>
-  <link rel="stylesheet" href="pages/about.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <link rel="apple-touch-icon" sizes="180x180" href="<%=require('./images/apple-touch-icon.png')%>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%=require('./images/favicon-32x32.png')%>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<%=require('./images/favicon-16x16.png')%>">
+  <link rel="mask-icon" href="<%=require('./images/safari-pinned-tab.svg')%>" color="#5bbad5">
   <meta name="description"
     content="Компания «Кварта» осуществляет деятельность, связанную с предоставлением услуг в области информационных технологий и системной интеграции.">
   <meta name="author" content="Максим Сосновский">
@@ -151,14 +151,14 @@
         <h2 class="title">отзывы</h2>
         <div class="slider__touch-img slider__touch-img_reviews"></div>
         <div class="reviews__slider">
-          <img src="images/rev1.jpg" alt="изображение документа" class="reviews__image">
-          <img src="images/rev2.jpg" alt="изображение документа" class="reviews__image">
-          <img src="images/rev3.jpg" alt="изображение документа" class="reviews__image">
-          <img src="images/rev4.jpg" alt="изображение документа" class="reviews__image">
-          <img src="images/rev5.jpg" alt="изображение документа" class="reviews__image">
-          <img src="images/rev6.jpg" alt="изображение документа" class="reviews__image">
-          <img src="images/rev7.jpg" alt="изображение документа" class="reviews__image">
-          <img src="images/rev8.jpg" alt="изображение документа" class="reviews__image">
+          <img src="<%=require('./images/rev1.jpg')%>" alt="изображение документа" class="reviews__image">
+          <img src="<%=require('./images/rev2.jpg')%>" alt="изображение документа" class="reviews__image">
+          <img src="<%=require('./images/rev3.jpg')%>" alt="изображение документа" class="reviews__image">
+          <img src="<%=require('./images/rev4.jpg')%>" alt="изображение документа" class="reviews__image">
+          <img src="<%=require('./images/rev5.jpg')%>" alt="изображение документа" class="reviews__image">
+          <img src="<%=require('./images/rev6.jpg')%>" alt="изображение документа" class="reviews__image">
+          <img src="<%=require('./images/rev7.jpg')%>" alt="изображение документа" class="reviews__image">
+          <img src="<%=require('./images/rev8.jpg')%>" alt="изображение документа" class="reviews__image">
         </div>
         <div class="reviews__dots"></div>
       </div>
@@ -170,35 +170,35 @@
         <h2 class="title">заказчики</h2>
         <div class="customers__container">
           <div class="customers__item">
-            <img src="images/aprf.jpg" alt="Аппарат Правительства" class="customers__image">
+            <img src="<%=require('./images/aprf.jpg')%>" alt="Аппарат Правительства" class="customers__image">
             <p class="customers__name">Аппарат Правительства Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="images/sf.jpg" alt="Совет Федерации" class="customers__image">
+            <img src="<%=require('./images/sf.jpg')%>" alt="Совет Федерации" class="customers__image">
             <p class="customers__name">Совет Федерации Федерального Собрания Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="images/gd.jpg" alt="Государственная Дума" class="customers__image">
+            <img src="<%=require('./images/gd.jpg')%>" alt="Государственная Дума" class="customers__image">
             <p class="customers__name">Государственная Дума Федерального Собрания Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="images/ud.jpg" alt="Управление делами Президента" class="customers__image">
+            <img src="<%=require('./images/ud.jpg')%>" alt="Управление делами Президента" class="customers__image">
             <p class="customers__name">Управление делами Президента Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="images/mid.jpg" alt="Министерство иностранных дел" class="customers__image">
+            <img src="<%=require('./images/mid.jpg')%>" alt="Министерство иностранных дел" class="customers__image">
             <p class="customers__name">Министерство иностранных дел Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="images/minsv.jpg" alt="Министерство связи" class="customers__image">
+            <img src="<%=require('./images/minsv.jpg')%>" alt="Министерство связи" class="customers__image">
             <p class="customers__name">Министерство связи и массовых коммуникаций Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="images/mer.jpg" alt="Министерство экономического развития" class="customers__image">
+            <img src="<%=require('./images/mer.jpg')%>" alt="Министерство экономического развития" class="customers__image">
             <p class="customers__name">Министерство экономического развития Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="images/mintrans.jpg" alt="Министерство транспорта" class="customers__image">
+            <img src="<%=require('./images/mintrans.jpg')%>" alt="Министерство транспорта" class="customers__image">
             <p class="customers__name">Министерство транспорта Российской Федерации</p>
           </div>
         </div>
@@ -210,13 +210,13 @@
       <div class="container">
         <h2 class="title">наши партнеры</h2>
         <div class="partners__content">
-          <a href="#" class="partners__link"><img src="images/infotecs.png" alt="логотип Инфотекс"
+          <a href="#" class="partners__link"><img src="<%=require('./images/infotecs.png')%>" alt="логотип Инфотекс"
               class="partners__logo"></a>
-          <a href="#" class="partners__link"><img src="images/microsoft.png" alt="логотип Микрософт"
+          <a href="#" class="partners__link"><img src="<%=require('./images/microsoft.png')%>" alt="логотип Микрософт"
               class="partners__logo"></a>
-          <a href="#" class="partners__link"><img src="images/smp.png" alt="логотип СМП банка"
+          <a href="#" class="partners__link"><img src="<%=require('./images/smp.png')%>" alt="логотип СМП банка"
               class="partners__logo"></a>
-          <a href="#" class="partners__link"><img src="images/1c.png" alt="логотип 1С" class="partners__logo"></a>
+          <a href="#" class="partners__link"><img src="<%=require('./images/1c.png')%>" alt="логотип 1С" class="partners__logo"></a>
         </div>
       </div>
     </section>
@@ -325,8 +325,7 @@
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/slick.min.js"></script>
     <script src="js/vendor/slider.config.js" type="text/javascript"></script>
-    
-    <script src="js/about.js"></script>
+    <script src="<%= htmlWebpackPlugin.files.js %>" type="text/javascript"></script>
   </div>
 
 </body>

@@ -9,7 +9,12 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: {
-    'index': './src/js/index.js'
+    'index': './src/js/index.js',
+    'about': './src/js/about.js',
+    'solutions': './src/js/solutions.js',
+    'services': './src/js/services.js',
+    'news': './src/js/news.js',
+    'career': './src/js/career.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -19,7 +24,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: [/node_modules/, path.resolve(__dirname, 'src/js/vendor/')],
+        exclude: [/node_modules/],
         use: {
           loader: 'babel-loader',
           options: {
@@ -40,7 +45,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              importLoaders: 2
+              importLoaders: 2,
             }
           },
           'postcss-loader'
@@ -54,6 +59,7 @@ module.exports = {
             options: {
               name: './images/[name].[contenthash].[ext]',
               esModule: false,
+              publicPath: '../'
             }
           },
           {
@@ -82,13 +88,17 @@ module.exports = {
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        loader: 'file-loader?name=./vendor/[name].[ext]'
+        loader: 'file-loader?name=./fonts/[name].[ext]',
+        options: {
+          outputPath: './fonts',
+          publicPath: '../fonts'
+        }
       }
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.[contenthash].css'
+      filename: 'styles/[name].[contenthash].css'
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
@@ -105,7 +115,37 @@ module.exports = {
       inject: false,
       chunks: ['index'],
       template: './src/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['about'],
+      template: './src/about.html',
+      filename: 'about.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['solutions'],
+      template: './src/solutions.html',
+      filename: 'solutions.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['services'],
+      template: './src/services.html',
+      filename: 'services.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['news'],
+      template: './src/news.html',
+      filename: 'news.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['career'],
+      template: './src/career.html',
+      filename: 'career.html',
     }),
     new CopyWebpackPlugin(
       [

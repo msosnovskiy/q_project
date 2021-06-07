@@ -1,3 +1,5 @@
+import '../pages/news.css';
+
 const selection = document.querySelector('.selection');
 const anchors = selection.querySelectorAll('a[href*="#"]')
 const spoilerItems = selection.querySelectorAll('.spoiler__item')

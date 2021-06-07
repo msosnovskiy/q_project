@@ -1,3 +1,5 @@
+import '../pages/career.css';
+
 const vacancies = document.querySelector('.vacancies');
 const spoilerWrappers = vacancies.querySelectorAll('.spoiler__wrapper')
 
