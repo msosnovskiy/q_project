@@ -57,8 +57,9 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: './images/[name].[contenthash].[ext]',
+              name: 'images/[name].[contenthash].[ext]',
               esModule: false,
+              publicPath: '../'
             }
           },
           {
@@ -88,12 +89,16 @@ module.exports = {
       {
         test: /\.(eot|ttf|woff|woff2)$/,
         loader: 'file-loader?name=./fonts/[name].[ext]',
+        options: {
+          outputPath: './fonts',
+          publicPath: '../fonts'
+        }
       }
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css'
+      filename: 'styles/[name].[contenthash].css'
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
