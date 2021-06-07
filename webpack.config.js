@@ -59,8 +59,10 @@ module.exports = {
             options: {
               name: 'images/[name].[contenthash].[ext]',
               esModule: false,
-              publicPath: '../'
-            }
+              options: {
+                publicPath: './'
+              }
+             }
           },
           {
             loader: 'image-webpack-loader',
@@ -89,16 +91,13 @@ module.exports = {
       {
         test: /\.(eot|ttf|woff|woff2)$/,
         loader: 'file-loader?name=./fonts/[name].[ext]',
-        options: {
-          outputPath: './fonts',
-          publicPath: '../fonts'
-        }
+
       }
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'styles/[name].[contenthash].css'
+      filename: '[name].[contenthash].css'
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
