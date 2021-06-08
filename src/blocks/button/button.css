@@ -65,6 +65,10 @@
     max-width: 80%;
     font-size: 18px;
   }
+  .button_small {
+    max-width: 128px;
+    font-size: 16px;
+  }
   .button_header {
     max-width: 100%;
   }
