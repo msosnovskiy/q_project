@@ -3,7 +3,6 @@
 @import url(./__item/customers__item.css);
 @import url(./__image/customers__image.css);
 @import url(./__name/customers__name.css);
-@import url(./__touch-img/customers__touch-img.css);
 
 .customers {
   padding: 90px 0;  
