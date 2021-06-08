@@ -1,28 +1,28 @@
 @keyframes anim-scroll-point { 
   0% { 
-    transform: translateX(20px) scale(1); opacity: 0;
+    transform: translateX(20px) scale(1.4); opacity: 0;
   } 
   10% {
-     transform: translateX(20px) scale(1); opacity: 1;
+     transform: translateX(20px) scale(1.4); opacity: 1;
     } 
   20%, 60% { 
-    transform: translateX(40px) scale(.6); opacity: 1;
+    transform: translateX(40px) scale(1); opacity: 1;
     } 
   80% {
-    transform: translateX(-10px) scale(.6); opacity: 1;
+    transform: translateX(-10px) scale(1); opacity: 1;
   }
   to { 
-    transform: translateX(-10px) scale(.6); opacity: 0;
+    transform: translateX(-10px) scale(1); opacity: 0;
   } 
 } 
 
 .slider__touch-img {
   background-repeat: no-repeat;
-  width: 40px;
-  height: 40px;
-  margin: 0 32px 0 auto;
+  width: 20px;
+  height: 20px;
+  margin: 0 44px 0 auto;
   border-radius: 50%;
-  background-color: rgba(223, 223, 223, 0.4);
+  background-color: rgb(223, 223, 223);
   animation: anim-scroll-point 2s infinite;
   display: none;
   position: relative;
@@ -30,17 +30,13 @@
 
 .slider__touch-img::after {
   content: "";
-  width: 30px;
-  height: 30px;
-  background-color: #dbdbdb;
+  width: 28px;
+  height: 28px;
+  background-color: rgba(219, 219, 219, 0.2);
   border-radius: 50%;
   position: absolute;
-  left: 5px;
-  top: 5px;
-}
-
-.slider__touch-point {
-
+  left: -4px;
+  top: -4px;
 }
 
 @media screen and (max-width:680px) {

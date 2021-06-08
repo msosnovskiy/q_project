@@ -57,9 +57,12 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: './images/[name].[contenthash].[ext]',
+              name: 'images/[name].[contenthash].[ext]',
               esModule: false,
-            }
+              options: {
+                publicPath: './'
+              }
+             }
           },
           {
             loader: 'image-webpack-loader',
@@ -87,7 +90,8 @@ module.exports = {
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        loader: 'file-loader?name=fonts/[name].[ext]',
+        loader: 'file-loader?name=./fonts/[name].[ext]',
+
       }
     ]
   },
@@ -143,7 +147,11 @@ module.exports = {
       filename: 'career.html',
     }),
     new CopyWebpackPlugin(
-      [{ from: path.resolve(__dirname, 'src/js/vendor'), to: path.resolve(__dirname, 'dist/js/vendor') }]
+      [
+        {
+          from: path.resolve(__dirname, 'src/js/vendor'), to: path.resolve(__dirname, 'dist/js/vendor')
+        }
+      ]
     ),
     new WebpackMd5Hash()
   ]
