@@ -3,6 +3,7 @@ import '../pages/news.css';
 const selection = document.querySelector('.selection');
 const anchors = selection.querySelectorAll('a[href*="#"]')
 const scrollUp = document.querySelector('.scroll-up');
+const temp = document.getElementById('temp');
 
 
 // переключение меню
@@ -112,6 +113,13 @@ function smoothScroll(eID) {
   }
 }
 
+//перезапись temp Id для блока по умолчанию
+function rewritingDefaultArchorId() {
+  const currentBlock = document.querySelector('.selection__link_active');
+  temp.id = getLinkHref(currentBlock);
+  return temp.id;
+}
+
 // открытие блока при клике на ссылку
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (event) {
@@ -124,7 +132,7 @@ for (let anchor of anchors) {
 
 // Отображение и скрытие кнопки при скроле 
 document.addEventListener('scroll', function (event) {
-  if(currentYPosition() > 2000) {
+  if (currentYPosition() > 2000) {
     scrollUp.classList.add('scroll-up_visible')
   }
   else {
@@ -132,15 +140,17 @@ document.addEventListener('scroll', function (event) {
   }
 });
 
-document.addEventListener('click', (event) => {
-  console.log(event.target);
-})
-
 // скролл к якорной ссылке при клике на кнопку
-scrollUp.addEventListener('click', function () {
-  smoothScroll(getUrlId());
+scrollUp.addEventListener('click', function (event) {
+  if (getUrlId() != null) {
+    smoothScroll(getUrlId());
+    console.log(getUrlId());
+  }
+  else {
+    smoothScroll(rewritingDefaultArchorId());
+  }
+
 })
 
-
-
+rewritingDefaultArchorId();
 openSelectedBlocks();

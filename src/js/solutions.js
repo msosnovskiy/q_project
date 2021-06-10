@@ -1,7 +1,8 @@
 import '../pages/solutions.css';
 
 const selection = document.querySelector('.selection');
-const anchors = selection.querySelectorAll('a[href*="#"]')
+const anchors = selection.querySelectorAll('a[href*="#"]');
+const temp = document.getElementById('temp');
 
 
 // переключение меню
@@ -63,7 +64,14 @@ function openSelectedBlocks(event) {
   else return;
 }
 
-// обработка событий при клике на ссылку
+//перезапись temp Id для блока по умолчанию
+function rewritingDefaultArchorId() {
+  const currentBlock = document.querySelector('.selection__link_active');
+  temp.id = getLinkHref(currentBlock);
+  return temp.id;
+}
+
+// открытие блока при клике на ссылку
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (event) {
     event.preventDefault();
@@ -74,5 +82,6 @@ for (let anchor of anchors) {
   })
 }
 
+rewritingDefaultArchorId();
 openSelectedBlocks();
 
