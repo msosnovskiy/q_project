@@ -6,6 +6,7 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const { includes } = require('core-js/core/array');
 
 module.exports = {
   entry: {
@@ -83,7 +84,7 @@ module.exports = {
               }
             }
           }
-        ]
+        ],
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,

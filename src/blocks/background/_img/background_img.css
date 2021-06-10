@@ -10,7 +10,7 @@
 }
 
 .background_img_index {
-  background-image: url(../../../images/main.jpg);
+  background-image: url('~imagePath/images/main.jpg');
 }
 
 .background_img_about {
