@@ -144,7 +144,6 @@ document.addEventListener('scroll', function (event) {
 scrollUp.addEventListener('click', function (event) {
   if (getUrlId() != null) {
     smoothScroll(getUrlId());
-    console.log(getUrlId());
   }
   else {
     smoothScroll(rewritingDefaultArchorId());
