@@ -2,8 +2,7 @@ import '../pages/news.css';
 
 const selection = document.querySelector('.selection');
 const anchors = selection.querySelectorAll('a[href*="#"]')
-const spoilerItems = selection.querySelectorAll('.spoiler__item')
-const scrollUp = selection.querySelector('.scroll-up');
+const scrollUp = document.querySelector('.scroll-up');
 
 
 // переключение меню
@@ -124,7 +123,7 @@ for (let anchor of anchors) {
 }
 
 // Отображение и скрытие кнопки при скроле 
-document.addEventListener('scroll', function () {
+document.addEventListener('scroll', function (event) {
   if(currentYPosition() > 2000) {
     scrollUp.classList.add('scroll-up_visible')
   }
@@ -132,6 +131,10 @@ document.addEventListener('scroll', function () {
     scrollUp.classList.remove('scroll-up_visible');
   }
 });
+
+document.addEventListener('click', (event) => {
+  console.log(event.target);
+})
 
 // скролл к якорной ссылке при клике на кнопку
 scrollUp.addEventListener('click', function () {
