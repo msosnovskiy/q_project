@@ -3,26 +3,14 @@
 }
 
 @keyframes opened {
-  0% {
-    top: -100%;
+  0%, 10% {
+    top: -312px;
     transform: translateY(-50%);
     opacity: 0.5;
   }
   100% {
     top: 80px;
     opacity: 1;
-  }
-}
-
-@keyframes closed {
-  0% {
-    top: 80px;
-    opacity: 1;
-  }
-  100% {
-    top: -100%;
-    transform: translateY(-100%);
-    opacity: 0.5;
   }
 }
 
@@ -34,10 +22,9 @@
     position: absolute;
     z-index: -1;
     left: 0;
-    top: 0;
+    top: -312px;
     padding: 32px 20px;
-    animation: closed .2s cubic-bezier(.45,.05,.55,.95) forwards;
-    overflow-y: scroll;
+    display: none;
   }
 
   .header__navigation::before {
@@ -54,5 +41,5 @@
 
 .header__navigation_opened {
   display: block;
-  animation: opened 0.2s cubic-bezier(.45,.05,.55,.95) forwards;
+  animation: opened 0.28s cubic-bezier(.45,.05,.55,.95) forwards;
 }

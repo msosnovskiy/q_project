@@ -148,7 +148,6 @@ scrollUp.addEventListener('click', function (event) {
   else {
     smoothScroll(rewritingDefaultArchorId());
   }
-
 })
 
 rewritingDefaultArchorId();
