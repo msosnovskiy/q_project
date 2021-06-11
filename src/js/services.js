@@ -41,6 +41,7 @@ function init() {
 
   myMap.geoObjects.add(myPlacemark);
   myMap.controls.remove('searchControl');
+  myMap.controls.remove('trafficControl');
 
   //отключаем зум колёсиком мышки
   myMap.behaviors.disable('scrollZoom');
