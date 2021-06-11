@@ -19,34 +19,6 @@ menuIconWrapper.onclick = function () {
   else menuIconWrapper.ariaLabel = 'Открыть меню';
 }
 
-// подключения Яндекс карты
-ymaps.ready(init);
-
-function init() {
-  let myMap = new ymaps.Map('map', {
-    center: [55.748184, 37.638970],
-    zoom: 15
-  },
-    {
-      searchControlProvider: 'yandex#search'
-    }),
-    myPlacemark = new ymaps.Placemark([55.748184, 37.638970], {
-      balloonContentHeader: 'Quarta',
-      balloonContentBody: '109240, г. Москва,<br>Москворецкая набережная, дом 2а',
-    },
-      {
-        preset: 'islands#greenDotIconWithCaption',
-        iconColor: '#009966'
-      });
-
-  myMap.geoObjects.add(myPlacemark);
-  myMap.controls.remove('searchControl');
-  myMap.controls.remove('trafficControl');
-
-  //отключаем зум колёсиком мышки
-  myMap.behaviors.disable('scrollZoom');
-}
-
 // получение Id из URL
 function getUrlId() {
   return window.location.hash.split('#')[1];
