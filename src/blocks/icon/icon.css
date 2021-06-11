@@ -11,7 +11,6 @@
   margin: 0 auto;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1px;
-
   /* IE */
 	display: -ms-grid;
   -ms-grid-columns: 1fr 1px 1fr 1px 1fr 1px 1fr;
@@ -22,6 +21,9 @@
   .icon {
     max-width: 85%;
     grid-template-columns: repeat(2, 1fr);
+
+    -ms-grid-columns: 1fr 1px 1fr;
+    -ms-grid-rows: 1fr 1px 1fr;
   }
 }
 
@@ -29,5 +31,8 @@
   .icon {
     max-width: 80%;
     grid-template-columns: repeat(1, 1fr);
+
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr 1px 1fr 1px 1fr 1px 1fr;
   }
 }

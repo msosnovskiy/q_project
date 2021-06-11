@@ -2,12 +2,7 @@
   max-width: 208px;
   height: auto;
   margin: 14px auto;
+  text-align: center;
   color: #101010;
   font-weight: 400 ;
-}
-
-@media screen and (max-width:1263px) {
-  .icon__text {
-    /* max-width: 100%; */
-  }
 }
