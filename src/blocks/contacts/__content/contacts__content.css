@@ -9,7 +9,9 @@
   min-height: 328px;
   padding: 45px;
   background: linear-gradient(-90deg, #009966 0%, #008855 99.17%);
-}
+
+  -ms-grid-column: 3;
+	-ms-grid-row: 1;}
 
 @media screen and (max-width:1200px) {
   .contacts__content  {
@@ -31,6 +33,9 @@
   .contacts__content  {
     width: 100%;
     margin-left: -40px;
+
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
   }
 }
 
