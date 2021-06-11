@@ -10,6 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="<%=require('./images/favicon-32x32.png')%>">
   <link rel="icon" type="image/png" sizes="16x16" href="<%=require('./images/favicon-16x16.png')%>">
   <link rel="mask-icon" href="<%=require('./images/safari-pinned-tab.svg')%>" color="#5bbad5">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1c290042-945c-48d6-9e70-faf80a0b7386" type="text/javascript"></script>
   <meta name="description"
     content="Компания «Кварта» осуществляет деятельность, связанную с предоставлением услуг в области информационных технологий и системной интеграции.">
   <meta name="author" content="Максим Сосновский">
@@ -35,7 +36,8 @@
             <li class="header__list-item"><a class="header__link" href="services.html">услуги</a></li>
             <li class="header__list-item"><a class="header__link" href="news.html">пресс&nbsp;центр</a></li>
             <li class="header__list-item"><a class="header__link" href="career.html">карьера</a></li>
-            <li class="header__list-item"><a class="button button_header" href="https://supp.quarta.su/" target="_blank">личный&nbsp;кабинет</a></li>
+            <li class="header__list-item"><a class="button button_header" href="https://supp.quarta.su/"
+                target="_blank">личный&nbsp;кабинет</a></li>
           </ul>
         </nav>
       </div>
@@ -194,7 +196,8 @@
             <p class="customers__name">Министерство связи и массовых коммуникаций Российской Федерации</p>
           </div>
           <div class="customers__item">
-            <img src="<%=require('./images/mer.jpg')%>" alt="Министерство экономического развития" class="customers__image">
+            <img src="<%=require('./images/mer.jpg')%>" alt="Министерство экономического развития"
+              class="customers__image">
             <p class="customers__name">Министерство экономического развития Российской Федерации</p>
           </div>
           <div class="customers__item">
@@ -216,15 +219,14 @@
               class="partners__logo"></a>
           <a href="#" class="partners__link"><img src="<%=require('./images/smp.png')%>" alt="логотип СМП банка"
               class="partners__logo"></a>
-          <a href="#" class="partners__link"><img src="<%=require('./images/1c.png')%>" alt="логотип 1С" class="partners__logo"></a>
+          <a href="#" class="partners__link"><img src="<%=require('./images/1c.png')%>" alt="логотип 1С"
+              class="partners__logo"></a>
         </div>
       </div>
     </section>
 
     <section class="contacts">
-      <div class="contacts__map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adf07cfbdeaf4901e10969061b92578cb4724ad16301dd41d61a5233168d897be&amp;width=100%25&amp;height=480&amp;lang=ru_RU&amp;scroll=false"></script>
-      </div>
+      <div class="contacts__map" id="map"></div>
       <div class="contacts__content">
         <div class="contacts__address">
           <h3 class="contacts__name">Quarta</h3>

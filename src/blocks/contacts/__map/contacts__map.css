@@ -2,6 +2,7 @@
   margin-left: -120px;
   width: calc(100% + 120px);
   background-color: #009966;
+  height: 480px;
 }
 
 @media screen and (max-width:1200px) {

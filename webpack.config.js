@@ -7,7 +7,9 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
+
 module.exports = {
+  devtool: 'eval-source-map',
   entry: {
     'index': './src/js/index.js',
     'about': './src/js/about.js',
