@@ -1,5 +1,6 @@
 .icon__text {
   max-width: 208px;
+  height: auto;
   margin: 14px auto;
   color: #101010;
   font-weight: 400 ;

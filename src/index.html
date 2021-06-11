@@ -10,6 +10,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="<%=require('./images/favicon-32x32.png')%>">
   <link rel="icon" type="image/png" sizes="16x16" href="<%=require('./images/favicon-16x16.png')%>">
   <link rel="mask-icon" href="<%=require('./images/safari-pinned-tab.svg')%>" color="#5bbad5">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1c290042-945c-48d6-9e70-faf80a0b7386"
+    type="text/javascript"></script>
   <meta name="description"
     content="Компания «Кварта» осуществляет деятельность, связанную с предоставлением услуг в области информационных технологий и системной интеграции.">
   <meta name="author" content="Максим Сосновский">
@@ -52,25 +54,42 @@
       <div class="container">
         <h2 class="title">решения</h2>
         <div class="icon">
-          <a href="solutions.html#personnel" class="icon__content">
-            <img src="<%=require('./images/personnel.svg')%>" alt="иконка" class="icon__img">
-            <p class="icon__text">Управление персоналом</p>
-          </a>
-          <a href="solutions.html#finance" class="icon__content">
-            <img src="<%=require('./images/finance.svg')%>" alt="иконка" class="icon__img">
-            <p class="icon__text">Управление<span class="span span_br"></span>финансами</p>
-          </a>
-          <a href="solutions.html#resources" class="icon__content">
-            <img src="<%=require('./images/resources.svg')%>" alt="иконка" class="icon__img">
-            <p class="icon__text">Управление<span class="span span_br"></span>ресурсами</p>
-          </a>
-          <a href="solutions.html#analytics" class="icon__content">
-            <img src="<%=require('./images/analytics.svg')%>" alt="иконка" class="icon__img">
-            <p class="icon__text">Аналитика</p>
-          </a>
+          <div class="icon__wrapper">
+            <a href="solutions.html#personnel" class="icon__link">
+              <div class="icon__container">
+                <img src="<%=require('./images/personnel.svg')%>" alt="иконка" class="icon__img">
+                <p class="icon__text">Управление персоналом</p>
+              </div>
+            </a>
+          </div>
+          <div class="icon__wrapper">
+            <a href="solutions.html#finance" class="icon__link">
+              <div class="icon__container">
+                <img src="<%=require('./images/finance.svg')%>" alt="иконка" class="icon__img">
+                <p class="icon__text">Управление<span class="span span_br"></span>финансами</p>
+              </div>
+            </a>
+          </div>
+          <div class="icon__wrapper">
+            <a href="solutions.html#resources" class="icon__link">
+              <div class="icon__container">
+                <img src="<%=require('./images/resources.svg')%>" alt="иконка" class="icon__img">
+                <p class="icon__text">Управление<span class="span span_br"></span>ресурсами</p>
+              </div>
+            </a>
+          </div>
+          <div class="icon__wrapper">
+            <a href="solutions.html#analytics" class="icon__link">
+              <div class="icon__container">
+                <img src="<%=require('./images/analytics.svg')%>" alt="иконка" class="icon__img">
+                <p class="icon__text">Аналитика</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
+
 
     <section class="indicators">
       <div class="container">
@@ -95,22 +114,38 @@
       <div class="container">
         <h2 class="title">услуги</h2>
         <div class="icon">
-          <a href="services.html#development" class="icon__content">
-            <img src="<%=require('./images/development.svg')%>" alt="иконка" class="icon__img">
-            <p class="icon__text">Разработка и внедрение</p>
-          </a>
-          <a href="services.html#outsourcing" class="icon__content">
-            <img src="<%=require('./images/outsourcing.svg')%>" alt="иконка" class="icon__img">
-            <p class="icon__text">Аутсорсинг IT инфраструктуры</p>
-          </a>
-          <a href="services.html#integration" class="icon__content">
-            <img src="<%=require('./images/integration.svg')%>" alt="иконка" class="icon__img">
-            <p class="icon__text">Системная&nbsp;интеграция и дистрибуция</p>
-          </a>
-          <a href="services.html#protection" class="icon__content">
-            <img src="<%=require('./images/protection.svg')%>" alt="иконка" class="icon__img">
-            <p class="icon__text">Внедрение средств защиты&nbsp;информации</p>
-          </a>
+          <div class="icon__wrapper">
+            <a href="services.html#development" class="icon__link">
+              <div class="icon__container">
+                <img src="<%=require('./images/development.svg')%>" alt="иконка" class="icon__img">
+                <p class="icon__text">Разработка и внедрение</p>
+              </div>
+            </a>
+          </div>
+          <div class="icon__wrapper">
+            <a href="services.html#outsourcing" class="icon__link">
+              <div class="icon__container">
+                <img src="<%=require('./images/outsourcing.svg')%>" alt="иконка" class="icon__img">
+                <p class="icon__text">Аутсорсинг IT инфраструктуры</p>
+              </div>
+            </a>
+          </div>
+          <div class="icon__wrapper">
+            <a href="services.html#integration" class="icon__link">
+              <div class="icon__container">
+                <img src="<%=require('./images/integration.svg')%>" alt="иконка" class="icon__img">
+                <p class="icon__text">Системная&nbsp;интеграция и дистрибуция</p>
+              </div>
+            </a>
+          </div>
+          <div class="icon__wrapper">
+            <a href="services.html#protection" class="icon__link">
+              <div class="icon__container">
+                <img src="<%=require('./images/protection.svg')%>" alt="иконка" class="icon__img">
+                <p class="icon__text">Внедрение средств защиты&nbsp;информации</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -303,8 +338,6 @@
     <script src="js/vendor/slick.min.js" type="text/javascript"></script>
     <script src="js/vendor/slider.config.js" type="text/javascript"></script>
     <script src="<%= htmlWebpackPlugin.files.js %>" type="text/javascript"></script>
-    <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1c290042-945c-48d6-9e70-faf80a0b7386"
-      type="text/javascript"></script>
     <script defer src="js/vendor/map.js"></script>
   </div>
 </body>

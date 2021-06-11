@@ -3,4 +3,6 @@
 .banner {
   display: flex;
   align-items: center;
+  /* only IE */
+  height: 544px;
 }
