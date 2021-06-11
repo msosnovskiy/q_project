@@ -18,7 +18,8 @@
 
 .icon__wrapper:nth-child(3) {
 	-ms-grid-column: 5;
-	-ms-grid-row: 1;}
+	-ms-grid-row: 1;
+}
 
 .icon__wrapper:nth-child(4) {
 	-ms-grid-column: 7;
