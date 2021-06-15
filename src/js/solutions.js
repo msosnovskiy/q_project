@@ -80,7 +80,6 @@ function rewritingDefaultArchorId() {
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (event) {
     event.preventDefault();
-
     const blockID = getLinkHref(anchor);
     window.location.hash = blockID;
     openSelectedBlocks(event.target);

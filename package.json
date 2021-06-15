@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/msosnovskiy/q_project/issues"
   },
+  "browserslist": [
+    "> 0.25%, not dead"
+  ],
   "homepage": "https://github.com/msosnovskiy/q_project#readme",
   "devDependencies": {
     "@babel/cli": "7.10.4",

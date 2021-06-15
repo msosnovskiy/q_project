@@ -1,0 +1,65 @@
+.partners__wrapper {
+  border-right: 2px solid #dadedc;
+  border-bottom: 2px solid #dadedc;
+}
+
+.partners__wrapper:nth-child(1) {
+  -ms-grid-column: 1;
+	-ms-grid-row: 1;
+}
+
+.partners__wrapper:nth-child(2) {
+	-ms-grid-column: 3;
+	-ms-grid-row: 1;}
+
+.partners__wrapper:nth-child(3) {
+	-ms-grid-column: 5;
+	-ms-grid-row: 1;
+}
+
+.partners__wrapper:nth-child(4) {
+	-ms-grid-column: 7;
+	-ms-grid-row: 1;
+}
+
+.partners__wrapper:nth-of-type(4n) {
+  border-right: none;
+}
+
+.partners__wrapper:nth-last-child(-n+4) {
+  border-bottom: none;
+}
+
+@media screen and (max-width:1200px) {
+	.partners__wrapper:nth-child(1) {
+		-ms-grid-column: 1;
+		-ms-grid-row: 1;
+	}
+	
+	.partners__wrapper:nth-child(2) {
+		-ms-grid-column: 3;
+		-ms-grid-row: 1;}
+	
+	.partners__wrapper:nth-child(3) {
+		-ms-grid-column: 1;
+		-ms-grid-row: 3;
+	}
+	
+	.partners__wrapper:nth-child(4) {
+		-ms-grid-column: 3;
+		-ms-grid-row: 3;
+	}
+
+  /* каждый 2-й */
+  .partners__wrapper:nth-of-type(2n) {
+    border-right: none;
+  }
+  /* последние 4 элемента */
+  .partners__wrapper:nth-last-child(-n+4) {
+    border-bottom: 2px solid #DADEDC;
+  }
+  /* последние 2 элемента */
+  .partners__wrapper:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+}

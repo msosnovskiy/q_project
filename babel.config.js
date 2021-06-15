@@ -1,18 +1,16 @@
+
 const presets = [
   [
     "@babel/env",
     {
-      targets: { // указать цели, для полифилов
-            edge: "17",
-            ie: "10",
-            firefox: "50",
-            chrome: "64",
-            safari: "11.1",
-      },
-      useBuiltIns: "usage", // эта настройка babel-polyfill, если стоит значение usage, то будут подставлятся полифилы для версий браузеров которые указали ниже.
-      corejs: "3.14.0" // явно проставить версию corejs
+
+      useBuiltIns: "usage", 
+      corejs: "3.14.0" 
     }
   ],
 ];
-
-module.exports = { presets };
+const plugins = [ 
+      "@babel/plugin-syntax-dynamic-import",
+      "@babel/plugin-proposal-class-properties"
+];
+module.exports = { presets,  plugins};

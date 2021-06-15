@@ -6,12 +6,13 @@
 @import url(./__link/contacts__link.css);
 
 .contacts {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   color: #fefefe;
   font-size: 20px;
   display: -ms-grid;
-  -ms-grid-columns: 1fr 0px 1fr;
+  -ms-grid-columns: 50% 0px 50%;
   -ms-grid-rows: 1fr;
 }
 
@@ -19,7 +20,7 @@
   .contacts {
     grid-template-columns: repeat(1, calc(100% + 80px));
     -ms-grid-columns: calc(100% + 80px);
-    -ms-grid-rows: 1fr 0px 1fr;
+    -ms-grid-rows: 50% 0px 50%;
   }
 }
 
@@ -27,6 +28,6 @@
   .contacts {
     grid-template-columns: repeat(1, calc(100% + 40px));
     -ms-grid-columns: calc(100% + 40px);
-    -ms-grid-rows: 1fr 0px 1fr;
+    -ms-grid-rows: 50% 0px 50%;
   }
 }

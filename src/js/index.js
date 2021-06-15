@@ -1,7 +1,7 @@
 import '../pages/index.css';
 
 const menuIconWrapper = document.querySelector('.menu-icon-wrapper');
-const menuIcon = document.querySelector('.menu-icon')
+const menuIcon = document.querySelector('.menu-icon');
 
 // переключение меню
 menuIconWrapper.onclick = function () {

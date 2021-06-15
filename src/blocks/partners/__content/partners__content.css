@@ -5,12 +5,19 @@
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
+
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 0px 1fr 0px 1fr 0px 1fr;
+  -ms-grid-rows: 1fr;
 }
 
 
 @media screen and (max-width:1200px) {
   .partners__content {
     grid-template-columns: repeat(2, 1fr);
+
+    -ms-grid-columns: 1fr 0px 1fr ;
+    -ms-grid-rows: 1fr 0px 1fr;
   }
 }
 

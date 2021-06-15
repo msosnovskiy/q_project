@@ -57,6 +57,6 @@
 
 @media screen and (max-width:960px) {
   .menu-icon-wrapper {
-    display: flex;
+    display: block;
   }
 }
