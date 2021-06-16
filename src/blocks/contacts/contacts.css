@@ -6,28 +6,46 @@
 @import url(./__link/contacts__link.css);
 
 .contacts {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  color: #fefefe;
+  width: calc(100% + 240px);
+  height: 100%;
+  min-height: 480px;
+  margin-left: -120px;
   font-size: 20px;
+  color: #fefefe;
+  display: grid;
   display: -ms-grid;
+  grid-template-columns: repeat(2, 50%);
   -ms-grid-columns: 50% 0px 50%;
   -ms-grid-rows: 1fr;
 }
 
-@media screen and (max-width:740px) {
+@media screen and (max-width:1200px) {
   .contacts {
-    grid-template-columns: repeat(1, calc(100% + 80px));
-    -ms-grid-columns: calc(100% + 80px);
-    -ms-grid-rows: 50% 0px 50%;
+    width: calc(100% + 160px);
+    margin-left: -80px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .contacts {
+    width: calc(100% + 80px);
+    margin-left: -40px;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .contacts {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr 0px 1fr;
   }
 }
 
 @media screen and (max-width:480px) {
   .contacts {
-    grid-template-columns: repeat(1, calc(100% + 40px));
-    -ms-grid-columns: calc(100% + 40px);
-    -ms-grid-rows: 50% 0px 50%;
+    width: calc(100% + 40px);
+    margin-left: -20px;
   }
 }
