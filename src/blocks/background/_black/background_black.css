@@ -21,7 +21,7 @@
   height: 100vh;
   position: fixed;
   background: rgba(1, 1, 1, 0.8);
-  animation: opacity 0.25s cubic-bezier(.45,.05,.55,.95) forwards;
+  animation: opacity 0.15s cubic-bezier(.45,.05,.55,.95) forwards;
   color: #101010;
   z-index: 1;
   left: 0;

@@ -42,5 +42,5 @@
 
 .header__navigation_opened {
   display: block;
-  animation: opened 0.28s cubic-bezier(.45,.05,.55,.95) forwards;
+  animation: opened 0.15s cubic-bezier(.45,.05,.55,.95) forwards;
 }

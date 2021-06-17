@@ -26,7 +26,7 @@
 }
 
 .button:hover {
-  animation: hoverbutton 0.2s ease-in forwards;
+  animation: hoverbutton 0.15s ease-in forwards;
 }
 
 .button_header {

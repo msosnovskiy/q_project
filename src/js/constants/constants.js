@@ -1,7 +1,8 @@
 const root = document.querySelector('.root');
-const page = document.querySelector('.page');
-const menu = document.querySelector('.menu-icon');
-const menuWrapper = document.querySelector('.menu-icon-wrapper');
-const navigation = document.querySelector('.header__navigation');
+const page = root.querySelector('.page');
+const navigation = page.querySelector('.header__navigation');
+const menuIconWrapper = document.querySelector('.menu-icon-wrapper');
+const menuIcon = document.querySelector('.menu-icon');
+const map = document.querySelector('#map');
 
-export { root, page, menu, menuWrapper, navigation };
+export { root, page, navigation, menuIconWrapper, menuIcon, map };

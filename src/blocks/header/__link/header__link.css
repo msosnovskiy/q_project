@@ -31,12 +31,12 @@
 }
 
 .header__link:hover {
-  animation: hover 0.2s ease-in forwards;
+  animation: hover 0.15s ease-in forwards;
 }
 
 
 .header__link:focus {
-  animation: hover 0.2s ease-in forwards;
+  animation: hover 0.15s ease-in forwards;
 }
 
 @media screen and (max-width:960px) {
