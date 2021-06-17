@@ -23,5 +23,8 @@ function init() {
   myMap.controls.remove('trafficControl');
   //отключаем зум колёсиком мышки
   myMap.behaviors.disable('scrollZoom');
-  myMap.behaviors.disable('MultiTouch');
+  myMap.behaviors.disable('drag');
+  myMap.addEventListener('drag', (event) => {
+    console.log(event);
+  })
 }
