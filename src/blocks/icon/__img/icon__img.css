@@ -2,17 +2,22 @@
   width: 120px;
   margin: 14px;
   transition-duration: .25s;
+  margin: 0 auto;
 }
 
 @media screen and (max-width:1263px) {
   .icon__img {
     width: 140px;
-    margin: 14px 8px 0;
+    margin: 14px auto 0;
   }
 }
 
 @media screen and (max-width:660px) {
   .icon__img {
+    width: 160px;
+  }
+
+  .icon__img svg{
     width: 160px;
   }
 }
