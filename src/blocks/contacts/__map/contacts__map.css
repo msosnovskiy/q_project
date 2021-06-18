@@ -1,8 +1,37 @@
+@keyframes coverMap {
+  0% {
+    background-color: rgb(0, 0, 0, 0.0);
+  }
+  100% {
+    background-color: rgb(0, 0, 0, 0.7);
+  }
+}
+
 .contacts__map {
   touch-action: auto;
   background-color: #009966;
   -ms-grid-column: 1;
 	-ms-grid-row: 1;
+}
+
+.contacts__map_cover {
+  position: relative;
+  background-color: transparent;
+}
+
+.contacts__map_cover::after {
+  content: "Чтобы переместить карту проведите по ней двумя пальцами";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  animation: coverMap 0.3s ease-in forwards;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
 }
 
 @media screen and (max-width:650px) {
@@ -11,3 +40,4 @@
     -ms-grid-row: 1;
   }
 }
+
