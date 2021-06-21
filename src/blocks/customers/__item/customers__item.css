@@ -4,4 +4,124 @@
   margin: 0;
 }
 
+.customers__item:nth-child(1) {
+  -ms-grid-column: 1;
+	-ms-grid-row: 1;
+}
 
+.customers__item:nth-child(2) {
+	-ms-grid-column: 3;
+	-ms-grid-row: 1;
+}
+
+.customers__item:nth-child(3) {
+	-ms-grid-column: 5;
+	-ms-grid-row: 1;
+}
+
+.customers__item:nth-child(4) {
+	-ms-grid-column: 7;
+	-ms-grid-row: 1;
+}
+
+.customers__item:nth-child(5) {
+  -ms-grid-column: 1;
+	-ms-grid-row: 3;
+}
+
+.customers__item:nth-child(6) {
+	-ms-grid-column: 3;
+	-ms-grid-row: 3;}
+
+.customers__item:nth-child(7) {
+	-ms-grid-column: 5;
+	-ms-grid-row: 3;
+}
+
+.customers__item:nth-child(8) {
+	-ms-grid-column: 7;
+	-ms-grid-row: 3;
+}
+
+@media screen and (max-width:1160px) {
+  .customers__item:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+  }
+  
+  .customers__item:nth-child(2) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+  }
+  
+  .customers__item:nth-child(3) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 1;
+  }
+  
+  .customers__item:nth-child(4) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+  }
+  
+  .customers__item:nth-child(5) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+  }
+  
+  .customers__item:nth-child(6) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 3;}
+  
+  .customers__item:nth-child(7) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 5;
+  }
+  
+  .customers__item:nth-child(8) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 5;
+  }
+}
+
+@media screen and (max-width:840px) {
+  .customers__item:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+  }
+  
+  .customers__item:nth-child(2) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+  }
+  
+  .customers__item:nth-child(3) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+  }
+  
+  .customers__item:nth-child(4) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+  }
+  
+  .customers__item:nth-child(5) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 5;
+  }
+  
+  .customers__item:nth-child(6) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 5;
+  }
+  
+  .customers__item:nth-child(7) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 7;
+  }
+  
+  .customers__item:nth-child(8) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 7;
+  }
+}

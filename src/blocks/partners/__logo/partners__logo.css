@@ -1,13 +1,8 @@
 .partners__logo {
   max-width: 234px;
+  max-height: 48px;
   width: 100%;
   height: initial;
-  max-height: 48px;
   object-fit: contain;
   cursor: pointer;
-  transition-duration: .15s;
-}
-
-.partners__logo:hover {
-  transform: scale(1.05);
 }

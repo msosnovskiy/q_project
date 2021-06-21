@@ -1,12 +1,13 @@
 .selection__link {
+  width: 100%;
   min-height: 80px;
+  height: 100%;
   text-decoration: none;
   color: #009966;
   font-weight: 500;
   text-align: center;
   margin: 0 auto;
   padding: 12px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

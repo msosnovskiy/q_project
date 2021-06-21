@@ -1,22 +1,14 @@
 import '../pages/solutions.css';
+import * as constants from '../js/constants/constants.js';
+import Header from './components/Header.js';
+import Map from './components/Map.js';
+
+const header = new Header(constants.menuIconWrapper, constants.menuIcon, constants.navigation, constants.page, constants.root);
+const map = new Map(constants.map, 'contacts__map_cover');
 
 const selection = document.querySelector('.selection');
 const anchors = selection.querySelectorAll('a[href*="#"]');
 const temp = document.getElementById('temp');
-const menuIconWrapper = document.querySelector('.menu-icon-wrapper');
-const menuIcon = document.querySelector('.menu-icon')
-
-// переключение меню
-menuIconWrapper.onclick = function () {
-  menuIcon.classList.toggle('menu-icon__active');
-  document.querySelector('.header__navigation').classList.toggle('header__navigation_opened');
-  document.querySelector('.page').classList.toggle('background_black');
-  document.querySelector('.root').classList.toggle('overflow-hidden');
-  if (menuIcon.closest('.menu-icon__active')) {
-    menuIconWrapper.ariaLabel = 'Закрыть меню';
-  }
-  else menuIconWrapper.ariaLabel = 'Открыть меню';
-}
 
 // получение Id из URL
 function getUrlId() {
@@ -88,4 +80,7 @@ for (let anchor of anchors) {
 
 rewritingDefaultArchorId();
 openSelectedBlocks();
+
+header.setEventListener();
+map.setEventListener();
 

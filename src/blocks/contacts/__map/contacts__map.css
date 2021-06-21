@@ -3,7 +3,7 @@
     background-color: rgb(0, 0, 0, 0.0);
   }
   100% {
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0, 0.6);
   }
 }
 
@@ -21,6 +21,7 @@
 
 .contacts__map_cover::after {
   content: "Чтобы переместить карту проведите по ней двумя пальцами";
+  color: #fff;
   text-align: center;
   display: flex;
   justify-content: center;
