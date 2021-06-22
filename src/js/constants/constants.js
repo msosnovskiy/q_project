@@ -6,7 +6,9 @@ const menuIcon = document.querySelector('.menu-icon');
 const map = document.querySelector('#map');
 
 const selection = document.querySelector('.selection');
-const anchors = document.querySelectorAll('a[href*="#"]');
+const selectionList = document.querySelector('.selection__list');
+
+const anchors = selectionList.querySelectorAll('a[href*="#"]');
 const tempId = document.getElementById('temp');
 
 export { root, page, navigation, menuIconWrapper, menuIcon, map, selection, anchors, tempId };

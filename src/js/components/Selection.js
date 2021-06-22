@@ -64,11 +64,10 @@ export default class Selection {
   }
 
   setEventListener() {
-    // открытие блока при клике на ссылку
-    for (let anchor of this.anchors) {
-      anchor.addEventListener('click', (event) => {
+    for (let i = 0; i < this.anchors.length; i++) {
+      this.anchors[i].addEventListener('click', (event) => {
         event.preventDefault();
-        const blockID = this._getLinkHref(anchor);
+        const blockID = this._getLinkHref(this.anchors[i]);
         window.location.hash = blockID;
         this.openSelectedBlocks(event.target);
       })
