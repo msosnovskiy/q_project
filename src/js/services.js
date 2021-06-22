@@ -3,23 +3,14 @@ import * as constants from '../js/constants/constants.js';
 import Header from './components/Header.js';
 import Map from './components/Map.js';
 import Selection from './components/Selection.js';
+import Spoiler from './components/Spoiler.js';
+
+const spoilersWrappers = document.querySelectorAll('.spoiler__wrapper');
 
 const header = new Header(constants.menuIconWrapper, constants.menuIcon, constants.navigation, constants.page, constants.root);
 const map = new Map(constants.ymap, 'contacts__map_cover');
 const selection = new Selection(constants.selection, constants.tempId);
-
-const spoilerWrappers = constants.selection.querySelectorAll('.spoiler__wrapper');
-
-// открытие спойлера
-for (let wrapper of spoilerWrappers) {
-  wrapper.addEventListener('click', function () {
-    let button = wrapper.querySelector('.spoiler__button');
-    let item = wrapper.closest('.spoiler__item');
-    let content = item.querySelector('.spoiler__content');
-    button.classList.toggle('spoiler__button_active');
-    content.classList.toggle('spoiler__content_visible');
-  })
-}
+const spoiler = new Spoiler( spoilersWrappers);
 
 header.setEventListener();
 map.setEventListener();
@@ -27,3 +18,4 @@ map.setEventListener();
 selection.rewritingDefaultArchorId();
 selection.openSelectedBlocks();
 selection.setEventListener();
+spoiler.setEventListener()
