@@ -5,8 +5,8 @@ import Map from './components/Map.js';
 import Selection from './components/Selection.js';
 
 const header = new Header(constants.menuIconWrapper, constants.menuIcon, constants.navigation, constants.page, constants.root);
-const map = new Map(constants.map, 'contacts__map_cover');
-const selection = new Selection(constants.selection, constants.tempId, constants.anchors);
+const map = new Map(constants.ymap, 'contacts__map_cover');
+const selection = new Selection(constants.selection, constants.tempId);
 
 header.setEventListener();
 map.setEventListener();

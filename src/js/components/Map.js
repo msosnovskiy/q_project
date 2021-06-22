@@ -1,19 +1,19 @@
 export default class Map {
-  constructor(map, classPrompt) {
-    this.map = map;
+  constructor(ymap, classPrompt) {
+    this.ymap = ymap;
     this.classPrompt = classPrompt;
   }
 
   setEventListener() {
-    this.map.addEventListener('touchmove', (event) => {
-      if (this.map.contains(event.target) && (event.targetTouches.length < 2)) {
-        this.map.classList.add(this.classPrompt);
+    this.ymap.addEventListener('touchmove', (event) => {
+      if (this.ymap.contains(event.target) && (event.targetTouches.length < 2)) {
+        this.ymap.classList.add(this.classPrompt);
       }
     }, { passive: true });
 
-    this.map.addEventListener('touchend', (event) => {
-      if (this.map.contains(event.target)) {
-        this.map.classList.remove(this.classPrompt);
+    this.ymap.addEventListener('touchend', (event) => {
+      if (this.ymap.contains(event.target)) {
+        this.ymap.classList.remove(this.classPrompt);
       }
     });
   }
