@@ -62,6 +62,7 @@ export default class Selection {
   rewritingDefaultArchorId() {
     let currentBlock = this.container.querySelector('.selection__link_active');
     this.tempId.id = this._getLinkHref(currentBlock);
+    return this.tempId.id;
   }
 
   setEventListener() {

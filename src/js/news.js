@@ -4,11 +4,13 @@ import Header from './components/Header.js';
 import Map from './components/Map.js';
 import Selection from './components/Selection.js';
 
+const scrollUp = document.querySelector('.scroll-up');
+
 const header = new Header(constants.menuIconWrapper, constants.menuIcon, constants.navigation, constants.page, constants.root);
 const map = new Map(constants.ymap, 'contacts__map_cover');
 const selection = new Selection(constants.selection, constants.tempId);
 
-const scrollUp = document.querySelector('.scroll-up');
+
 
 // определяет текущее положение скрола
 function currentYPosition() {
@@ -78,7 +80,7 @@ scrollUp.addEventListener('click', function (event) {
   }
 })
 
-
+console.log(selection.rewritingDefaultArchorId());
 header.setEventListener();
 map.setEventListener();
 selection.rewritingDefaultArchorId();
