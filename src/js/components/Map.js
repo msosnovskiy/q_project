@@ -9,7 +9,7 @@ export default class Map {
       if (this.map.contains(event.target) && (event.targetTouches.length < 2)) {
         this.map.classList.add(this.classPrompt);
       }
-    });
+    }, { passive: true });
 
     this.map.addEventListener('touchend', (event) => {
       if (this.map.contains(event.target)) {

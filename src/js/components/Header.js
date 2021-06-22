@@ -8,7 +8,8 @@ export default class Header {
   }
 
   _menuOpened() {
-    if (this.menuIcon.closest('.menu-icon__active')) {
+    let menuState = this.menuIconWrapper.querySelector('.menu-icon__active');
+    if (menuState === this.menuIcon) {
       return true;
     } else return false;
   }
