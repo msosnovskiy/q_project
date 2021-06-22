@@ -74,7 +74,7 @@ scrollUp.addEventListener('click', function (event) {
     smoothScroll(selection.getUrlId());
   }
   else {
-    smoothScroll(rewritingDefaultArchorId());
+    smoothScroll(selection.rewritingDefaultArchorId());
   }
 })
 
