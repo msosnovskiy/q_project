@@ -3,15 +3,10 @@ export default class Spoiler {
     this.spoilerWrappers = spoilerWrappers;
   }
 
-  _currentBlock(e) {
-    return e.parentNode
-  }
-
   _spoilerOpened(e) {
     if (e.classList.contains('spoiler__content_visible')) {
       return true;
     } else return false;
-
   }
 
   _openSpoiler(e, openingСlass) {
