@@ -8,8 +8,6 @@
   object-fit: cover;
   object-position: top;
   padding-right: 48px;
-
-  height: auto;
 }
 
 @media screen and (max-width:1024px) {

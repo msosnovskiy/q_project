@@ -5,7 +5,7 @@
   margin: 48px 0 96px;
   display: -ms-grid;
   -ms-grid-columns: 1fr 0px 1fr;
-  -ms-grid-rows: auto 0px auto 0px auto;
+  -ms-grid-rows: auto 0px 1fr 0px auto;
 }
 
 .selection__content-item:last-child {
