@@ -1,4 +1,4 @@
-export default class Selection {
+export default class Selections {
   constructor(container, tempId) {
     this.container = container;
     this.tempId = tempId;
