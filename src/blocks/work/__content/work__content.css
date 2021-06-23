@@ -1,13 +1,18 @@
 .work__content {
   display: grid;
+  display: -ms-grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 32px;
+  -ms-grid-columns: 1fr 32px 1fr;
   grid-row-gap: 60px;
+  grid-column-gap: 32px;
+  -ms-grid-rows: auto 60px auto;
 }
 
 @media screen and (max-width:1024px) {
   .work__content {
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 28px;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: auto 28px auto 28px auto 28px auto;
   }
 }

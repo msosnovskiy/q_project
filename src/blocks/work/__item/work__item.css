@@ -6,3 +6,35 @@
   padding: 32px 22px;
   background-color: #009966;
 }
+
+.work__item:nth-child(2) {
+  -ms-grid-column: 3;
+  -ms-grid-row: 1;
+}
+
+.work__item:nth-child(3) {
+	-ms-grid-column: 1;
+	-ms-grid-row: 3;
+}
+
+.work__item:nth-child(4) {
+	-ms-grid-column: 3;
+	-ms-grid-row: 3;
+}
+
+@media screen and (max-width:1024px) {
+  .work__item:nth-child(2) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+  }
+  
+  .work__item:nth-child(3) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 5;
+  }
+  
+  .work__item:nth-child(4) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 7;
+  }
+}

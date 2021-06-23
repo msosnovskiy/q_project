@@ -1,7 +1,7 @@
 .selection__content-image {
   grid-column: 1;
   -ms-grid-column: 1;
-  grid-row: 1 / 20;
+  grid-row: 1 / 4;
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   width: 100%;
