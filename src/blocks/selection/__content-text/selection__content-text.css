@@ -1,14 +1,7 @@
 .selection__content-text {
-  grid-column: 2;
   margin: 12px auto 6px;
 }
 
 .selection__content-text:first-of-type {
   margin-top: 0;
-}
-
-@media screen and (max-width:1024px) {
-  .selection__content-text  {
-    grid-column: 1;
-  }
 }

@@ -1,0 +1,13 @@
+.selection__content-wrapper {
+  grid-column: 2;
+  -ms-grid-column: 3;
+  -ms-grid-row: 3;
+}
+
+@media screen and (max-width:1024px) {
+  .selection__content-wrapper  {
+    grid-column: 1;
+    -ms-grid-column: 1;
+    -ms-grid-row: 5;
+  }
+}

@@ -3,6 +3,9 @@
   grid-template-columns: repeat(2, 1fr);
   position: relative;
   margin: 48px 0 96px;
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 0px 1fr;
+  -ms-grid-rows: auto 0px auto 0px auto;
 }
 
 .selection__content-item:last-child {
@@ -28,5 +31,7 @@
 @media screen and (max-width:1024px) {
   .selection__content-item {
     grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: auto 0px auto 0px auto;
   }
 }

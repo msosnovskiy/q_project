@@ -3,12 +3,15 @@
   font-weight: 500;
   font-size: 24px;
   grid-column: 2;
+  -ms-grid-column: 3;
+  -ms-grid-row: 1;
   margin: 0 0 24px;
 }
 
 @media screen and (max-width:1024px) {
   .selection__content-title {
     grid-column: 1;
+    -ms-grid-column: 1;
     grid-row: 1;
     margin-bottom: 32px;
   }

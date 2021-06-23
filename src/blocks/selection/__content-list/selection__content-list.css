@@ -1,5 +1,4 @@
 .selection__content-list {
-  grid-column: 2;
   font-weight: normal;
   margin: 2px 0;
   padding-left: 24px;
@@ -19,10 +18,4 @@
   top: 6px;
   left: 0;
   position: absolute;
-}
-
-@media screen and (max-width:1024px) {
-  .selection__content-list  {
-    grid-column: 1;
-  }
 }

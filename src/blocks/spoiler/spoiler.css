@@ -11,5 +11,7 @@
   max-width: 1024px;
   width: 100%;
   margin: 64px auto 0;
-  grid-column: 1 / -1;
+  grid-column: span 2;
+  -ms-grid-row: 5;
+  -ms-grid-column-span: 3;
 }
