@@ -1,0 +1,16 @@
+.typical__text {
+  margin: 12px auto 6px;
+}
+
+.typical__text_frame {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #009966;
+  padding: 48px;
+}
+
+@media screen and (max-width:768px) {
+  .typical__text_frame {
+    padding: 24px;
+  }
+}

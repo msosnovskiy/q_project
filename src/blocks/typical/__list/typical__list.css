@@ -1,0 +1,17 @@
+.typical__list {
+  font-weight: normal;
+  margin: 2px 0 4px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.typical__list::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #009966;
+  border-radius: 50%;
+  top: 6px;
+  left: 0;
+  position: absolute;
+}

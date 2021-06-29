@@ -1,0 +1,7 @@
+.typical__image {
+  margin: 48px auto;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-self: center;
+}

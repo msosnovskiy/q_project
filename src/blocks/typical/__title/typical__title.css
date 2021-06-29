@@ -1,0 +1,30 @@
+.typical__title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 24px 0 16px;
+}
+
+.typical__title_main {
+  font-size: 36px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+@media screen and (max-width:768px) {
+  .typical__title_main {
+    margin: 0 auto 24px;
+  }
+}
+
+@media screen and (max-width:660px) {
+  .typical__title_main {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width:340px) {
+  .typical__title_main {
+    font-size: 24px;
+  }
+}

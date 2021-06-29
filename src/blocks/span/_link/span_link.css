@@ -1,7 +1,7 @@
 .span_link {
   color: #009966;
   font-weight: 500;
-  transition-duration: 0.25s;
+  transition-duration: 0.15s;
 }
 
 .span_link:hover {

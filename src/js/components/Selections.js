@@ -1,7 +1,9 @@
 export default class Selections {
-  constructor(container, tempId) {
+  constructor(container, tempId, block, blockAction) {
     this.container = container;
     this.tempId = tempId;
+    this.block = block;
+    this.blockAction = blockAction;
     this.selectionList = this.container.querySelector('.selection__list');
     this.anchors = this.selectionList.querySelectorAll('a[href*="#"]');
   }
@@ -72,6 +74,10 @@ export default class Selections {
         const blockID = this._getLinkHref(this.anchors[i]);
         window.location.hash = blockID;
         this.openSelectedBlocks(event.target);
+        // если это блок новостей - запустить рендер из БД
+        if (this.block === 'news') {
+          this.blockAction.render();
+        }
       })
     }
   }

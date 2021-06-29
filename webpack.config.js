@@ -17,6 +17,10 @@ module.exports = {
     'services': './src/js/services.js',
     'news': './src/js/news.js',
     'career': './src/js/career.js',
+    'kadry': './src/js/kadry.js',
+    'government-purchases': './src/js/government-purchases.js',
+    'budget': './src/js/budget.js',
+    'consolidated-reporting': './src/js/consolidated-reporting.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -52,7 +56,7 @@ module.exports = {
             options: {
               name: './images/[name].[contenthash].[ext]',
               esModule: false,
-            }
+            },
           },
           {
             loader: 'image-webpack-loader',
@@ -81,12 +85,17 @@ module.exports = {
       {
         test: /\.(eot|ttf|woff|woff2)$/,
         loader: 'file-loader?name=fonts/[name].[ext]',
+        // options: {
+        //   outputPath: './fonts',
+        //   publicPath: '../fonts'
+        // }
       }
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css'
+      // filename: './styles/[name].[contenthash].css'
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
@@ -135,8 +144,35 @@ module.exports = {
       template: './src/career.html',
       filename: 'career.html',
     }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['kadry'],
+      template: './src/kadry.html',
+      filename: 'kadry.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['government-purchases'],
+      template: './src/government-purchases.html',
+      filename: 'government-purchases.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['budget'],
+      template: './src/budget.html',
+      filename: 'budget.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['consolidated-reporting'],
+      template: './src/consolidated-reporting.html',
+      filename: 'consolidated-reporting.html',
+    }),
     new CopyWebpackPlugin(
-      [{ from: path.resolve(__dirname, 'src/js/vendor'), to: path.resolve(__dirname, 'dist/js/vendor') }]
+      [
+        { from: path.resolve(__dirname, 'src/js/vendor'), to: path.resolve(__dirname, 'dist/js/vendor') },
+        { from: path.resolve(__dirname, 'src/docs'), to: path.resolve(__dirname, 'dist/docs') }
+      ]
     ),
     new WebpackMd5Hash()
   ]
