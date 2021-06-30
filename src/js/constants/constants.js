@@ -8,6 +8,8 @@ const selection = document.querySelector('.selection');
 const tempId = document.getElementById('temp');
 const spoilersWrappers = document.querySelectorAll('.spoiler__wrapper');
 const scrollUpButton = document.querySelector('.scroll-up');
+const footer = document.querySelector('.footer__text');
+const footerText = 'Quarta. Все права защищены!';
 
 
-export { root, page, navigation, menuIconWrapper, menuIcon, ymap, selection, tempId, spoilersWrappers, scrollUpButton,  };
+export { root, page, navigation, menuIconWrapper, menuIcon, ymap, selection, tempId, spoilersWrappers, scrollUpButton, footer, footerText };

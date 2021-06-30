@@ -9,6 +9,8 @@ import { newsData } from './data/newsData.js';
 import News from './components/News.js';
 import NewsLists from './components/NewsLists.js';
 
+import Footer from './components/Footer.js';
+
 const selectionContent = document.querySelector('.selection_content');
 const anchor = document.querySelector('.anchor');
 
@@ -18,7 +20,7 @@ const createNews = (...arg) => new News(...arg);
 const newsList = new NewsLists(selectionContent, newsData, createNews, anchor)
 const selections = new Selections(constants.selection, constants.tempId, 'news', newsList);
 const scrollUp = new ScrollUp(document, constants.scrollUpButton, selections);
-
+const footer = new Footer(constants.footer, constants.footerText);
 
 header.setEventListener();
 map.setEventListener();
@@ -26,4 +28,5 @@ selections.rewritingDefaultArchorId();
 newsList.render();
 selections.setEventListener();
 scrollUp.setEventListener();
+footer.setContent();
 
