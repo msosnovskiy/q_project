@@ -1,5 +1,4 @@
 const newsData = [
-
   {
     year: '2020',
     data: [
