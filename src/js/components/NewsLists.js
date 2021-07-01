@@ -53,20 +53,26 @@ export default class NewsLists {
     return newsArray;
   }
 
+  _getArchiveArray() {
+    let activeLinhs = this.links.length - 1;
+    let archiveArray = []
+    for (let i = 0; i < this.array.length; i++) {
+      if (this.array[i].year <= (this._gettingYear() - activeLinhs)) {
+        archiveArray.push(this.array[i]);
+      }
+    }
+    return archiveArray;
+  }
+
+  _sortArrayByYears(array) {
+    return array.sort((a, b) => a.year < b.year ? 1 : -1);
+  }
+
   render() {
     this.setYearsHref();
     this._setYearsDataId();
     this.container.innerHTML = '';
-    const activeLinhs = this.links.length - 1;
-    console.log(activeLinhs);
-    for (let i = 0; i < this.array.length; i++) {
-      if (this.array[i].year <= (this._gettingYear() - activeLinhs)) {
-        console.log(this.array[i]);
-        
-      }
-    }
 
-    
+    console.log(this._sortArrayByYears(this._getArchiveArray()));
   }
-
 }
