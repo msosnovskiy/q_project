@@ -26,7 +26,6 @@ export default class NewsLists {
 
   setYearsHref() {
     let id = this._gettingYear() + 1;
-    // this.links.[this.links.length - 1].href = '#archive';
 
     for (let i = 0; i < this.links.length; i++) {
       id--;
@@ -34,7 +33,6 @@ export default class NewsLists {
       this.links[i].textContent = id;
     }
     this.links.[this.links.length - 1].textContent = 'Архив';
-
     this.numberLastLink = id;
   }
 
@@ -53,17 +51,6 @@ export default class NewsLists {
     return newsArray;
   }
 
-  _getArchiveArray() {
-    let activeLinhs = this.links.length - 1;
-    let archiveArray = []
-    for (let i = 0; i < this.array.length; i++) {
-      if (this.array[i].year <= (this._gettingYear() - activeLinhs)) {
-        archiveArray.push(this.array[i]);
-      }
-    }
-    return archiveArray;
-  }
-
   _sortArrayByYears(array) {
     return array.sort((a, b) => a.year < b.year ? 1 : -1);
   }
@@ -73,10 +60,29 @@ export default class NewsLists {
     this._setYearsDataId();
     this.container.innerHTML = '';
 
-    console.log(this._sortArrayByYears(this._getArchiveArray()));
+    let archiveArray = [];
+    let newsArray = [];
+    
     for (let i = 0; i < this.array.length; i++) {
-      if (this.array[i].year === this._getAnchorId()) {
-        this.array[i].data.forEach((item) => {
+      if (this.array[i].year === this._getAnchorId() && this.array[i].year != this.numberLastLink) {
+        newsArray.push(this.array[i]);
+      }
+      else if (this.array[i].year <= this.numberLastLink) {
+        archiveArray.push(this.array[i]);
+      }
+    }
+
+    if (this._getAnchorId() > this.numberLastLink) {
+      for (let i = 0; i < newsArray.length; i++) {
+        newsArray[i].data.forEach((item) => {
+          this._addItem(this.createNews(item.date, item.text)._create());
+        })
+      }
+    }
+
+    else {
+      for (let i = 0; i < archiveArray.length; i++) {
+        this._sortArrayByYears(archiveArray)[i].data.forEach((item) => {
           this._addItem(this.createNews(item.date, item.text)._create());
         })
       }
