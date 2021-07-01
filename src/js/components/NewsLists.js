@@ -74,5 +74,12 @@ export default class NewsLists {
     this.container.innerHTML = '';
 
     console.log(this._sortArrayByYears(this._getArchiveArray()));
+    for (let i = 0; i < this.array.length; i++) {
+      if (this.array[i].year === this._getAnchorId()) {
+        this.array[i].data.forEach((item) => {
+          this._addItem(this.createNews(item.date, item.text)._create());
+        })
+      }
+    }
   }
 }
