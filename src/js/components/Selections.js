@@ -43,8 +43,7 @@ export default class Selections {
     if (this.getUrlId() != null && event === undefined) {
       this.tempId.id = this.getUrlId();
       let dataId = (this.tempId.id + 'Data');
-      //поправить на работу с this.container
-      this._switchBlocks(document.getElementById(dataId));
+      this._switchBlocks(this.container.querySelector(`#${dataId}`));
       for (let i = 0; i < this.anchors.length; i++) {
         if (this._getLinkHref(this.anchors[i]) === this.getUrlId()) {
           this._switchButton(this.anchors[i]);

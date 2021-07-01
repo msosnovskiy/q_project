@@ -5,7 +5,7 @@ export default class Footer {
   }
 
   setContent() {
-    this.footer.textContent = (`© 1992-${this._gettingYear()} ${this.text}`);
+    this.footer.textContent = (`1992-${this._gettingYear()} ${this.text}`);
   }
 
   _gettingYear() {
