@@ -16,7 +16,7 @@ export default class NewsLists {
     this.container.id = (this._getAnchorId() + 'Data');
   }
 
-  _gettingYear() {
+  _getСurrentYear() {
     let year = new Date().getFullYear();
     if (year >= 2021) {
       return year;
@@ -25,7 +25,7 @@ export default class NewsLists {
   }
 
   setYearsHref() {
-    let id = this._gettingYear() + 1;
+    let id = this._getСurrentYear() + 1;
 
     for (let i = 0; i < this.links.length; i++) {
       id--;
@@ -40,17 +40,6 @@ export default class NewsLists {
     this.container.appendChild(itemElement);
   }
 
-  _getActualData() {
-    let years = this._gettingYear();
-    let newsArray = [];
-    for (let i = 0; i < this.links.length - 1; i++) {
-      if (this.array[i].year = years);
-      newsArray.push(this.array[i]);
-      years--;
-    }
-    return newsArray;
-  }
-
   _sortArrayByYears(array) {
     return array.sort((a, b) => a.year < b.year ? 1 : -1);
   }
@@ -62,7 +51,7 @@ export default class NewsLists {
 
     let archiveArray = [];
     let newsArray = [];
-    
+
     for (let i = 0; i < this.array.length; i++) {
       if (this.array[i].year === this._getAnchorId() && this.array[i].year != this.numberLastLink) {
         newsArray.push(this.array[i]);
