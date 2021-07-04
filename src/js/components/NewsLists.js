@@ -40,41 +40,50 @@ export default class NewsLists {
     this.container.appendChild(itemElement);
   }
 
-  _sortArrayByYears(array) {
-    return array.sort((a, b) => a.year < b.year ? 1 : -1);
+  _sortArrayByDays(array) {
+    return array.sort((a, b) => a.date.split('.')[2] + a.date.split('.')[1] + a.date.split('.')[0] < b.date.split('.')[2] + b.date.split('.')[1] + b.date.split('.')[0] ? 1 : -1);
   }
 
   render() {
     this.setYearsHref();
     this._setYearsDataId();
     this.container.innerHTML = '';
-
-    let archiveArray = [];
     let newsArray = [];
+    let archiveArray = [];
 
+    // формирование массивов новостей исходя из якорной ссылки
     for (let i = 0; i < this.array.length; i++) {
+      //массив актуальных новостей
       if (this.array[i].year === this._getAnchorId() && this.array[i].year != this.numberLastLink) {
         newsArray.push(this.array[i]);
       }
+      //массив архивных новостей
       else if (this.array[i].year <= this.numberLastLink) {
         archiveArray.push(this.array[i]);
       }
     }
 
+    // рендер новостей, если год больше последней ссылки/архивной
     if (this._getAnchorId() > this.numberLastLink) {
-      for (let i = 0; i < newsArray.length; i++) {
-        newsArray[i].data.forEach((item) => {
-          this._addItem(this.createNews(item.date, item.text)._create());
-        })
-      }
+      let sortNewsArray = this._sortArrayByDays(newsArray[0].data);
+      sortNewsArray.forEach((item) => {
+        this._addItem(this.createNews(item.date, item.text)._create());
+      })
     }
 
+    // рендер новостей, для архива
     else {
+      let sortArchiveArray = []
+      //создаем новый архивный массив и сортируем его по date
       for (let i = 0; i < archiveArray.length; i++) {
-        this._sortArrayByYears(archiveArray)[i].data.forEach((item) => {
-          this._addItem(this.createNews(item.date, item.text)._create());
+        archiveArray[i].data.forEach((item) => {
+          sortArchiveArray.push(item);
         })
       }
+      //рендер новостей для отсортированного архивного массива
+      this._sortArrayByDays(sortArchiveArray).forEach((item) => {
+        this._addItem(this.createNews(item.date, item.text)._create());
+      });
     }
   }
 }

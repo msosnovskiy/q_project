@@ -1,9 +1,9 @@
 export default class NewsPreviewList {
-  constructor(container, createNewsItem, array, moment) {
+  constructor(container, createNewsItem, array, newsPreviewLength) {
     this.container = container;
     this.createNewsItem = createNewsItem;
     this.array = array;
-    this.moment = moment;
+    this.newsPreviewLength = newsPreviewLength;
   }
 
   _findMaxYear(array) {
@@ -30,17 +30,12 @@ export default class NewsPreviewList {
     this.container.innerHTML = '';
     //находим архив новосте актуального года и сортируем его по дате
     let newsPreviewArray = this._sortArrayByDays(this._findMaxYear(this.array));
-
     //определяем длинну масива до 3 новостей
-    newsPreviewArray.length = 3;
+    newsPreviewArray.length = this.newsPreviewLength;
 
     //рендер новостей
     newsPreviewArray.forEach(item => {
       this._addItem(this.createNewsItem(item.date, item.text)._create())
     })
-
-    // for (let i =0; i < newsPreviewArray.length; i++) {
-    //   this._addItem(this.createNewsItem(newsPreviewArray[i].date, newsPreviewArray[i].text)._create());
-    // }
   }
 }
