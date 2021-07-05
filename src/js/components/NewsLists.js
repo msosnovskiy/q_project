@@ -26,7 +26,6 @@ export default class NewsLists {
 
   setYearsHref() {
     let id = this._getСurrentYear() + 1;
-
     for (let i = 0; i < this.links.length; i++) {
       id--;
       this.links[i].href = `#${id}`;
@@ -73,13 +72,13 @@ export default class NewsLists {
     this._setYearsDataId();
     this.container.innerHTML = '';
 
-    // рендер новостей, если год больше последней ссылки/архивной
+    // рендер новостей, если год больше последней/архивной ссылки
     if (this._getAnchorId() > this.numberLastLink) {
       this._sortArrayByDate(this._getNewsArray(this.array)).forEach((item) => {
         this._addItem(this.createNews(item.date, item.text)._create());
       })
     }
-    // рендер новостей, для архива
+    // рендер новостей для архива
     else {
       this._sortArrayByDate(this._getArchiveArray(this.array)).forEach((item) => {
         this._addItem(this.createNews(item.date, item.text)._create());
