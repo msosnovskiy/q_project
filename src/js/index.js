@@ -7,6 +7,8 @@ import NewsPreviewList from './components/NewsPreviewList.js';
 import Footer from './components/Footer.js';
 
 const newsContent = document.querySelector('.news__content');
+
+//Кол-во новостей в превью
 const newsPreviewLength = '3'
 import { newsData } from './data/newsData.js';
 
