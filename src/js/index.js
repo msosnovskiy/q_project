@@ -5,12 +5,12 @@ import Map from './components/Map.js';
 import NewsPreview from './components/NewsPreview.js';
 import NewsPreviewList from './components/NewsPreviewList.js';
 import Footer from './components/Footer.js';
+import { newsData } from './data/newsData.js';
 
 const newsContent = document.querySelector('.news__content');
 
 //Кол-во новостей в превью
 const newsPreviewLength = '3'
-import { newsData } from './data/newsData.js';
 
 const header = new Header(constants.menuIconWrapper, constants.menuIcon, constants.navigation, constants.page, constants.root);
 const map = new Map(constants.ymap, 'contacts__map_cover');
