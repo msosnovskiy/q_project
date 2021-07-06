@@ -7,7 +7,12 @@
 
 .selection__news-date_empty {
   font-size: 32px;
+  min-height: 20vh;
   font-weight: 300;
   text-align: center;
+  display: flex;
+  align-items: center;
+  height: 250px;
+  justify-content: center;
   color: #dadada;
 }
