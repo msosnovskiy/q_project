@@ -80,7 +80,7 @@ export default class NewsLists {
       })
       }
       else {
-        this._addItem(this.createNews('Нет новостей за&nbsp;текущий год')._createEmpty());
+        this._addItem(this.createNews('Нет новостей за\u00A0текущий\u00A0год')._createEmpty());
       }
     }
     // рендер новостей для архива
