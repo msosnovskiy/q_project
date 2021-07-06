@@ -54,6 +54,13 @@ const newsData = [
     ]
   },
   {
+    year: '2022',
+    data: [
+      
+    ]
+  },
+
+  {
     year: '2021',
     data: [
       {
