@@ -22,4 +22,20 @@ export default class News {
 
     return newsItem;
   }
+
+  _createEmpty() {
+    const newsItem = document.createElement('div');
+    newsItem.classList.add('selection__news-item');
+
+    const newsDate = document.createElement('p');
+    newsDate.classList.add('selection__news-date');
+    newsDate.classList.add('selection__news-date_empty');
+    newsDate.textContent = this.date;
+
+    newsItem.appendChild(newsDate);
+
+    this.newsElement = newsItem;
+
+    return newsItem;
+  }
 }

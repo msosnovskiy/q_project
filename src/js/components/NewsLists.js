@@ -74,9 +74,14 @@ export default class NewsLists {
 
     // рендер новостей, если год больше последней/архивной ссылки
     if (this._getAnchorId() > this.numberLastLink) {
+      if (this._sortArrayByDate(this._getNewsArray(this.array)).length > 0) {
       this._sortArrayByDate(this._getNewsArray(this.array)).forEach((item) => {
         this._addItem(this.createNews(item.date, item.text)._create());
       })
+      }
+      else {
+        this._addItem(this.createNews('Нет новостей за&nbsp;текущий год')._createEmpty());
+      }
     }
     // рендер новостей для архива
     else {

@@ -19,7 +19,6 @@ export default class NewsPreviewList {
   }
 
   _findArrayByYear = (array, value) => array.filter((item) => {
-    console.log(item.year == value);
     return item.year == value;
   })[0];
 
@@ -30,12 +29,11 @@ export default class NewsPreviewList {
   render() {
     this.container.innerHTML = '';
     let stepYear = 0;
-    while ((this._findArrayByYear(this.array, this._gettingСurrentYear() - stepYear) == undefined)) {
+    while ((this._findArrayByYear(this.array, this._gettingСurrentYear() - stepYear) === undefined)) {
       stepYear++;
     }
     while (this.newsPreviewLength > 0 && (this._findArrayByYear(this.array, this._gettingСurrentYear() - stepYear) != undefined)) {
       let newsPreviewArray = this._sortArrayByDate(this._findArrayByYear(this.array, this._gettingСurrentYear() - stepYear));
-      console.log(newsPreviewArray);
       stepYear++;
       newsPreviewArray.forEach((item) => {
         if (this.newsPreviewLength > 0) {
@@ -44,7 +42,7 @@ export default class NewsPreviewList {
         }
       })
       if (!this.newsPreviewLength || (this._findArrayByYear(this.array, this._gettingСurrentYear() - stepYear) == undefined)) {
-        while ((this._findArrayByYear(this.array, this._gettingСurrentYear() - stepYear) == undefined)) {
+        while ((this._findArrayByYear(this.array, this._gettingСurrentYear() - stepYear) === undefined)) {
           stepYear++;
         }
       };

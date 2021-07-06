@@ -4,3 +4,11 @@
   font-size: 20px;
   font-weight: 500;
 }
+
+.selection__news-date_empty {
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+  /* color: #cecece; */
+  color: #e6ecea;
+}
