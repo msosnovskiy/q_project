@@ -1,7 +1,8 @@
 export default class NewsPreviewList {
-  constructor(container, createNewsItem, array, newsPreviewLength) {
+  constructor(container, createNewsItem, moreButton, array, newsPreviewLength) {
     this.container = container;
     this.createNewsItem = createNewsItem;
+    this.moreButton = moreButton;
     this.array = array;
     this.newsPreviewLength = newsPreviewLength;
   }
@@ -26,8 +27,13 @@ export default class NewsPreviewList {
     this.container.appendChild(itemElement);
   }
 
+  _setHrefOnButton() {
+    return this.moreButton.href = `news.html#${this._gettingСurrentYear()}`
+  }
+
   render() {
     this.container.innerHTML = '';
+    this._setHrefOnButton();
     let stepYear = 0;
     while ((this._findArrayByYear(this.array, this._gettingСurrentYear() - stepYear) === undefined)) {
       stepYear++;

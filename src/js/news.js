@@ -24,8 +24,6 @@ const footer = new Footer(constants.footer, constants.footerText);
 header.setEventListener();
 map.setEventListener();
 
-// установить Href на ссылки
-
 selections.rewritingDefaultArchorId();
 newsList.render();
 selections.setEventListener();
