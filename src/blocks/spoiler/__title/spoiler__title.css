@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+.spoiler__title:first-letter {
+  text-transform: uppercase;
+}
+
 .spoiler__title_green {
   color: #009966;
 }

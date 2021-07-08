@@ -8,3 +8,7 @@
 .spoiler__subtitle:first-child {
   margin: 0 0 24px;
 }
+
+.spoiler__subtitle:first-letter {
+  text-transform: uppercase;
+}

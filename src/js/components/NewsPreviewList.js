@@ -35,9 +35,12 @@ export default class NewsPreviewList {
     this.container.innerHTML = '';
     this._setHrefOnButton();
     let stepYear = 0;
+
+    //проверка на наличие данных за текущий год в массиве, если нет - проверяем следующий год
     while ((this._findArrayByYear(this.array, this._gettingСurrentYear() - stepYear) === undefined)) {
       stepYear++;
     }
+    // рендер новостей для заданной newsPreviewLength
     while (this.newsPreviewLength > 0 && (this._findArrayByYear(this.array, this._gettingСurrentYear() - stepYear) != undefined)) {
       let newsPreviewArray = this._sortArrayByDate(this._findArrayByYear(this.array, this._gettingСurrentYear() - stepYear));
       stepYear++;

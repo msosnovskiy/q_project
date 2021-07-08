@@ -19,7 +19,6 @@ export default class News {
     newsItem.appendChild(newsText);
 
     this.newsElement = newsItem;
-
     return newsItem;
   }
 
@@ -33,9 +32,7 @@ export default class News {
     newsDate.textContent = this.date;
 
     newsItem.appendChild(newsDate);
-
     this.newsElement = newsItem;
-
     return newsItem;
   }
 }
