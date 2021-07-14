@@ -3,16 +3,21 @@ export default class News {
     this.date = date;
     this.text = text;
   }
-  _create() {
-    const newsItem = document.createElement('div');
-    newsItem.classList.add('selection__news-item');
 
-    const newsDate = document.createElement('p');
-    newsDate.classList.add('selection__news-date');
+  _createDOMElement(tag, cls) {
+    let elem = document.createElement(`${tag}`);
+    elem.classList.add(`${cls}`);
+    return elem;
+  }
+
+  _create() {
+
+    const newsItem = this._createDOMElement('div', 'selection__news-item');
+    
+    const newsDate = this._createDOMElement('p', 'selection__news-date');
     newsDate.textContent = this.date;
 
-    const newsText = document.createElement('p');
-    newsText.classList.add('selection__news-text');
+    const newsText = this._createDOMElement('p', 'selection__news-text');
     newsText.textContent = this.text;
 
     newsItem.appendChild(newsDate);
@@ -22,15 +27,10 @@ export default class News {
     return newsItem;
   }
 
-  _createEmpty() {
-    const newsItem = document.createElement('div');
-    newsItem.classList.add('selection__news-item');
-
-    const newsDate = document.createElement('p');
-    newsDate.classList.add('selection__news-date');
-    newsDate.classList.add('selection__news-date_empty');
-    newsDate.textContent = this.date;
-
+  _createEmpty(message) {
+    const newsItem = this._createDOMElement('div', 'selection__news-item');
+    const newsDate = this._createDOMElement('p', 'empty-message');
+    newsDate.textContent = message;
     newsItem.appendChild(newsDate);
     this.newsElement = newsItem;
     return newsItem;

@@ -1,0 +1,12 @@
+.empty-message {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 32px;
+  min-height: 20vh;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 15vh;
+  justify-content: center;
+  color: rgba(158, 158, 158, 0.5);
+}

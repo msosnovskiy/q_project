@@ -31,7 +31,8 @@
 
 .customers__item:nth-child(6) {
 	-ms-grid-column: 3;
-	-ms-grid-row: 3;}
+	-ms-grid-row: 3;
+}
 
 .customers__item:nth-child(7) {
 	-ms-grid-column: 5;
@@ -41,6 +42,206 @@
 .customers__item:nth-child(8) {
 	-ms-grid-column: 7;
 	-ms-grid-row: 3;
+}
+
+.customers__item:nth-child(9) {
+  -ms-grid-column: 1;
+	-ms-grid-row: 5;
+}
+
+.customers__item:nth-child(10) {
+	-ms-grid-column: 3;
+	-ms-grid-row: 5;
+}
+
+.customers__item:nth-child(11) {
+	-ms-grid-column: 5;
+	-ms-grid-row: 5;
+}
+
+.customers__item:nth-child(12) {
+	-ms-grid-column: 7;
+	-ms-grid-row: 5;
+}
+
+.customers__item:nth-child(13) {
+  -ms-grid-column: 1;
+	-ms-grid-row: 7;
+}
+
+.customers__item:nth-child(14) {
+	-ms-grid-column: 3;
+	-ms-grid-row: 7;
+}
+
+.customers__item:nth-child(15) {
+	-ms-grid-column: 5;
+	-ms-grid-row: 7;
+}
+
+.customers__item:nth-child(16) {
+	-ms-grid-column: 7;
+	-ms-grid-row: 7;
+}
+
+.customers__item:nth-child(17) {
+  -ms-grid-column: 1;
+	-ms-grid-row: 9;
+}
+
+.customers__item:nth-child(18) {
+	-ms-grid-column: 3;
+	-ms-grid-row: 9;
+}
+
+.customers__item:nth-child(19) {
+	-ms-grid-column: 5;
+	-ms-grid-row: 9;
+}
+
+.customers__item:nth-child(20) {
+	-ms-grid-column: 7;
+	-ms-grid-row: 9;
+}
+
+.customers__item:nth-child(21) {
+  -ms-grid-column: 1;
+	-ms-grid-row: 11;
+}
+
+.customers__item:nth-child(22) {
+	-ms-grid-column: 3;
+	-ms-grid-row: 11;
+}
+
+.customers__item:nth-child(23) {
+	-ms-grid-column: 5;
+	-ms-grid-row: 11;
+}
+
+.customers__item:nth-child(24) {
+	-ms-grid-column: 7;
+	-ms-grid-row: 11;
+}
+
+.customers__item:nth-child(25) {
+  -ms-grid-column: 1;
+	-ms-grid-row: 13;
+}
+
+.customers__item:nth-child(26) {
+	-ms-grid-column: 3;
+	-ms-grid-row: 13;
+}
+
+.customers__item:nth-child(27) {
+	-ms-grid-column: 5;
+	-ms-grid-row: 13;
+}
+
+.customers__item:nth-child(28) {
+	-ms-grid-column: 7;
+	-ms-grid-row: 13;
+}
+
+.customers__item:nth-child(29) {
+  -ms-grid-column: 1;
+	-ms-grid-row: 15;
+}
+
+.customers__item:nth-child(30) {
+	-ms-grid-column: 3;
+	-ms-grid-row: 15;
+}
+
+.customers__item:nth-child(31) {
+	-ms-grid-column: 5;
+	-ms-grid-row: 15;
+}
+
+.customers__item:nth-child(32) {
+	-ms-grid-column: 7;
+	-ms-grid-row: 15;
+}
+
+.customers__item:nth-child(33) {
+  -ms-grid-column: 1;
+	-ms-grid-row: 17;
+}
+
+.customers__item:nth-child(34) {
+	-ms-grid-column: 3;
+	-ms-grid-row: 17;
+}
+
+.customers__item:nth-child(35) {
+	-ms-grid-column: 5;
+	-ms-grid-row: 17;
+}
+
+.customers__item:nth-child(36) {
+	-ms-grid-column: 7;
+	-ms-grid-row: 17;
+}
+
+.customers__item:nth-child(37) {
+  -ms-grid-column: 1;
+	-ms-grid-row: 19;
+}
+
+.customers__item:nth-child(38) {
+	-ms-grid-column: 3;
+	-ms-grid-row: 19;
+}
+
+.customers__item:nth-child(39) {
+	-ms-grid-column: 5;
+	-ms-grid-row: 19;
+}
+
+.customers__item:nth-child(40) {
+	-ms-grid-column: 7;
+	-ms-grid-row: 19;
+}
+
+.customers__item:nth-child(41) {
+  -ms-grid-column: 1;
+	-ms-grid-row: 21;
+}
+
+.customers__item:nth-child(42) {
+	-ms-grid-column: 3;
+	-ms-grid-row: 21;
+}
+
+.customers__item:nth-child(43) {
+	-ms-grid-column: 5;
+	-ms-grid-row: 21;
+}
+
+.customers__item:nth-child(44) {
+	-ms-grid-column: 7;
+	-ms-grid-row: 21;
+}
+
+.customers__item:nth-child(45) {
+  -ms-grid-column: 1;
+	-ms-grid-row: 23;
+}
+
+.customers__item:nth-child(46) {
+	-ms-grid-column: 3;
+	-ms-grid-row: 23;
+}
+
+.customers__item:nth-child(47) {
+	-ms-grid-column: 5;
+	-ms-grid-row: 23;
+}
+
+.customers__item:nth-child(48) {
+	-ms-grid-column: 7;
+	-ms-grid-row: 23;
 }
 
 @media screen and (max-width:1160px) {
@@ -71,7 +272,8 @@
   
   .customers__item:nth-child(6) {
     -ms-grid-column: 5;
-    -ms-grid-row: 3;}
+    -ms-grid-row: 3;
+  }
   
   .customers__item:nth-child(7) {
     -ms-grid-column: 1;
@@ -82,7 +284,209 @@
     -ms-grid-column: 3;
     -ms-grid-row: 5;
   }
+  
+  .customers__item:nth-child(9) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 5;
+  }
+  
+  .customers__item:nth-child(10) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 7;
+  }
+  
+  .customers__item:nth-child(11) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 7;
+  }
+  
+  .customers__item:nth-child(12) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 7;
+  }
+  
+  .customers__item:nth-child(13) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 9;
+  }
+  
+  .customers__item:nth-child(14) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 9;
+  }
+  
+  .customers__item:nth-child(15) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 9;
+  }
+  
+  .customers__item:nth-child(16) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 11;
+  }
+  
+  .customers__item:nth-child(17) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 11;
+  }
+  
+  .customers__item:nth-child(18) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 11;
+  }
+  
+  .customers__item:nth-child(19) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 13;
+  }
+  
+  .customers__item:nth-child(20) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 13;
+  }
+  
+  .customers__item:nth-child(21) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 13;
+  }
+  
+  .customers__item:nth-child(22) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 15;
+  }
+  
+  .customers__item:nth-child(23) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 15;
+  }
+  
+  .customers__item:nth-child(24) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 15;
+  }
+  
+  .customers__item:nth-child(25) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 17;
+  }
+  
+  .customers__item:nth-child(26) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 17;
+  }
+  
+  .customers__item:nth-child(27) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 17;
+  }
+  
+  .customers__item:nth-child(28) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 19;
+  }
+  
+  .customers__item:nth-child(29) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 19;
+  }
+  
+  .customers__item:nth-child(30) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 19;
+  }
+  
+  .customers__item:nth-child(31) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 21;
+  }
+  
+  .customers__item:nth-child(32) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 21;
+  }
+  
+  .customers__item:nth-child(33) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 21;
+  }
+  
+  .customers__item:nth-child(34) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 23;
+  }
+  
+  .customers__item:nth-child(35) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 23;
+  }
+  
+  .customers__item:nth-child(36) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 23;
+  }
+  
+  .customers__item:nth-child(37) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 25;
+  }
+  
+  .customers__item:nth-child(38) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 25;
+  }
+  
+  .customers__item:nth-child(39) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 25;
+  }
+  
+  .customers__item:nth-child(40) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 27;
+  }
+  
+  .customers__item:nth-child(41) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 27;
+  }
+  
+  .customers__item:nth-child(42) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 27;
+  }
+  
+  .customers__item:nth-child(43) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 29;
+  }
+  
+  .customers__item:nth-child(44) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 29;
+  }
+  
+  .customers__item:nth-child(45) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 29;
+  }
+  
+  .customers__item:nth-child(46) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 31;
+  }
+  
+  .customers__item:nth-child(47) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 31;
+  }
+  
+  .customers__item:nth-child(48) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 31;
+  }
 }
+
+ /* -------------------------  */
 
 @media screen and (max-width:840px) {
   .customers__item:nth-child(1) {
@@ -123,5 +527,203 @@
   .customers__item:nth-child(8) {
     -ms-grid-column: 3;
     -ms-grid-row: 7;
+  }
+
+  .customers__item:nth-child(9) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 9;
+  }
+  
+  .customers__item:nth-child(10) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 9;
+  }
+  
+  .customers__item:nth-child(11) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 11;
+  }
+  
+  .customers__item:nth-child(12) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 11;
+  }
+  
+  .customers__item:nth-child(13) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 13;
+  }
+  
+  .customers__item:nth-child(14) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 13;
+  }
+  
+  .customers__item:nth-child(15) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 15;
+  }
+  
+  .customers__item:nth-child(16) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 15;
+  }
+  .customers__item:nth-child(17) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 17;
+  }
+  
+  .customers__item:nth-child(18) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 17;
+  }
+  
+  .customers__item:nth-child(19) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 19;
+  }
+  
+  .customers__item:nth-child(20) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 19;
+  }
+  
+  .customers__item:nth-child(21) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 21;
+  }
+  
+  .customers__item:nth-child(22) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 21;
+  }
+  
+  .customers__item:nth-child(23) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 23;
+  }
+  
+  .customers__item:nth-child(24) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 23;
+  }
+  
+  .customers__item:nth-child(25) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 25;
+  }
+  
+  .customers__item:nth-child(26) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 25;
+  }
+  
+  .customers__item:nth-child(27) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 27;
+  }
+  
+  .customers__item:nth-child(28) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 27;
+  }
+  
+  .customers__item:nth-child(29) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 29;
+  }
+  
+  .customers__item:nth-child(30) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 29;
+  }
+  
+  .customers__item:nth-child(31) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 31;
+  }
+  
+  .customers__item:nth-child(32) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 31;
+  }
+  .customers__item:nth-child(33) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 33;
+  }
+  
+  .customers__item:nth-child(34) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 33;
+  }
+  
+  .customers__item:nth-child(35) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 35;
+  }
+  
+  .customers__item:nth-child(36) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 35;
+  }
+  
+  .customers__item:nth-child(37) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 37;
+  }
+  
+  .customers__item:nth-child(38) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 37;
+  }
+  
+  .customers__item:nth-child(39) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 39;
+  }
+  
+  .customers__item:nth-child(40) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 39;
+  }
+  
+  .customers__item:nth-child(41) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 41;
+  }
+  
+  .customers__item:nth-child(42) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 41;
+  }
+  
+  .customers__item:nth-child(43) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 43;
+  }
+  
+  .customers__item:nth-child(44) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 43;
+  }
+  
+  .customers__item:nth-child(45) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 45;
+  }
+  
+  .customers__item:nth-child(46) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 45;
+  }
+  
+  .customers__item:nth-child(47) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 47;
+  }
+  
+  .customers__item:nth-child(48) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 47;
   }
 }

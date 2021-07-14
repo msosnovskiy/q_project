@@ -83,8 +83,14 @@ export default class Vacancy {
 
     return spoilerItem;
   }
+  
+  _createEmpty(message) {
+    const vacancy = this._createDOMElement('h3', 'empty-message');
+    vacancy.textContent = message;
+    return vacancy;
+  }
 
-  _spoilerOpened(e) {
+  _itsOpened(e) {
     if (e.classList.contains('spoiler__content_visible')) {
       return true;
     } else return false;
@@ -100,7 +106,7 @@ export default class Vacancy {
 
   _setEventListener() {
     this.wrapper.addEventListener('click', () => {
-      if (this._spoilerOpened(this.content)) {
+      if (this._itsOpened(this.content)) {
         this._closeSpoiler(this.button, 'spoiler__button_active');
         this._closeSpoiler(this.content, 'spoiler__content_visible');
       }

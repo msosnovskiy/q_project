@@ -1,10 +1,11 @@
 export default class NewsLists {
-  constructor(container, array, createNews, anchor, links) {
+  constructor(container, array, createNews, anchor, links, emptyMessage) {
     this.container = container;
     this.array = array;
     this.createNews = createNews;
     this.anchor = anchor;
     this.links = links;
+    this.emptyMessage = emptyMessage;
     this.numberLastLink = '';
   }
 
@@ -80,7 +81,7 @@ export default class NewsLists {
       })
       }
       else {
-        this._addItem(this.createNews('Нет новостей за\u00A0текущий\u00A0год')._createEmpty());
+        this._addItem(this.createNews()._createEmpty(this.emptyMessage));
       }
     }
     // рендер новостей для архива
