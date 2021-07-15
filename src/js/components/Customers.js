@@ -45,6 +45,7 @@ export default class Customers {
     let multiplicity = 0;
     let openedItemsLength = this._getOpenedItems().length;
 
+    // устанавливаем кратность столбцов в зависимости от ширины экрана
     if (this._getWindowWidth() > 840 && this._getWindowWidth() <= 1160) {
       this.quantityToAdded = 6;
       multiplicity = 3;
@@ -54,40 +55,28 @@ export default class Customers {
       multiplicity = 4;
     }
 
-    console.log(`отображено изначально (openedItemsLength) - ${openedItemsLength}`);
-
+    //присваиваем переменной toRender кол-ов отрисованных эл в последней строке
     let toRender = openedItemsLength % multiplicity;
-    console.log(`в последней строке отрисовано ${toRender} из ${multiplicity}`)
 
+    //сравниваем кол-во отрисованых эл. с тем сколько нужно отрисовать
+    //если уже отрисованых больше то рисуем остальные
     if (toRender >= (multiplicity - toRender)) {
-      // if (toRender === 0) {
-      //   console.log('нечего рендерить');
-      // }
-      // if (toRender > 0) {
-      console.log(`на рендер (multiplicity - toRender) ${multiplicity - toRender}`);
       toRender = multiplicity - toRender;
       for (let i = 0; i < toRender; i++) {
         this._open(this._getNotOpenedItems(this.items)[i]);
-        console.log(`добавлен ${toRender} элемент`);
       }
-      // }
+
     }
 
     toRender = openedItemsLength % multiplicity;
 
+    //если уже отрисованых меньше, удаляем все эл в последней строке
     if (toRender < (multiplicity - toRender) && toRender != 0) {
-      console.log(`проще удалить (toRender) ${toRender}`);
       for (let i = 0; i < toRender; i++) {
         let numLastItem = this._getOpenedItems(this.items).length - 1;
         this._delete(this._getOpenedItems(this.items)[numLastItem]);
-        console.log(`удален ${toRender} элемент`);
       }
     }
-
-    // else {
-    //   console.log('ничего не делать');
-    // }
-
   }
 
   setEventListener() {
