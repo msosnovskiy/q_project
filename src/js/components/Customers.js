@@ -99,7 +99,6 @@ export default class Customers {
         this.button.classList.add(this.disableButtonClass);
         this.button.setAttribute('disabled', true);
       }
-      console.log(`уже отображено - ${this._getOpenedItems().length}`);
     })
   }
 }
