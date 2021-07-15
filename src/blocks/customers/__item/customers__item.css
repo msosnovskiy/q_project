@@ -2,6 +2,11 @@
   text-align: center;
   padding: 8px;
   margin: 0;
+  display: none;
+}
+
+.customers__item_visible {
+  display: inline-block;
 }
 
 .customers__item:nth-child(1) {

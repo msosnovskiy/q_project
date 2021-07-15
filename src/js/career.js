@@ -16,13 +16,11 @@ const vacancyContainer = document.querySelector('.spoiler');
 
 const header = new Header(constants.menuIconWrapper, constants.menuIcon, constants.navigation, constants.page, constants.root);
 const map = new Map(constants.ymap, 'contacts__map_cover');
-// const spoiler = new Spoiler(constants.spoilersWrappers);
 const createVacancyItem = (...arg) => new Vacancy(...arg);
 const vacancyList = new VacancyList(vacancyContainer, createVacancyItem, vacancySchema, vacancyData, emptyMessage);
 const footer = new Footer(constants.footer, constants.footerText);
 
 header.setEventListener();
 vacancyList.render();
-// spoiler.setEventListener();
 map.setEventListener();
 footer.setContent();

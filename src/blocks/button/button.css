@@ -24,6 +24,7 @@
   font-size: 20px;
   line-height: 24px;
   margin: 16px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -46,6 +47,17 @@
   min-height: 36px;
   font-size: 16px;
   padding: 4px 8px;
+}
+
+.button_disabled {
+  background-color: #e4e7e6;
+  border: 2px solid #e4e7e6;
+  color: #a3a3a3;
+  cursor: auto;
+}
+
+.button_disabled:hover {
+  animation: none;
 }
 
 @media screen and (max-width:960px) {

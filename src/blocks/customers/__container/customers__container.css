@@ -10,7 +10,8 @@
     /* IE */
 	display: -ms-grid;
   -ms-grid-columns: 1fr 12px 1fr 12px 1fr 12px 1fr;
-  -ms-grid-rows: 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr;
+  /* -ms-grid-rows: 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr; */
+  -ms-grid-rows: 1fr 0px 1fr;
 }
 
 @media screen and (max-width:1160px) {
@@ -18,7 +19,8 @@
     grid-template-columns: repeat(3, 1fr);
 
     -ms-grid-columns: 1fr 0px 1fr 0px 1fr;
-    -ms-grid-rows: 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr;
+    /* -ms-grid-rows: 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr; */
+    -ms-grid-rows: 1fr 0px 1fr 0px 1fr;
   }
 }
 
@@ -32,7 +34,8 @@
   .customers__container {
     grid-template-columns: repeat(2, 1fr);
     -ms-grid-columns: 1fr 12px 1fr;
-    -ms-grid-rows: 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr;
+    /* -ms-grid-rows: 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr; */
+    -ms-grid-rows: 1fr 0px 1fr 0px 1fr 0px 1fr;
   }
 }
 
