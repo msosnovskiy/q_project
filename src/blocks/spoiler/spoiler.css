@@ -12,6 +12,6 @@
   width: 100%;
   margin: 64px auto 0;
   grid-column: span 2;
-  -ms-grid-row: 5;
+  -ms-grid-row: 7;
   -ms-grid-column-span: 3;
 }
