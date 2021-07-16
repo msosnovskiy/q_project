@@ -6,7 +6,6 @@ export default class Customers {
     this.itemClass = itemClass;
     this.visibleItemСlass = visibleItemСlass;
     this.items = this.container.querySelectorAll(`.${this.itemClass}`);
-    this.firstItem = this._getNotOpenedItems(this.items)[0];
     this.quantityToAdded = 8;
     this.openedStatus = false;
   }
@@ -25,14 +24,21 @@ export default class Customers {
     return this.container.querySelectorAll(`.${this.visibleItemСlass}`);
   }
 
-  _getNotOpenedItems(array) {
-    let arr = []
+  //for ie (contains)
+  _hasClass = (element, className) => {
+    return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1;
+  }
+
+  _getNotOpenedItems(NodeList) {
+    let array =  Array.prototype.slice.call(NodeList);
+    let newArray = [];
+
     array.forEach(item => {
-      if (!item.classList.contains(this.visibleItemСlass)) {
-        arr.push(item);
-      };
+      if (!this._hasClass(item, this.visibleItemСlass)) {
+        newArray.push(item);
+      }
     });
-    return arr;
+    return newArray;
   }
 
   _getWindowWidth() {
@@ -45,7 +51,7 @@ export default class Customers {
     let multiplicity = 0;
     let openedItemsLength = this._getOpenedItems().length;
 
-    // устанавливаем кратность столбцов в зависимости от ширины экрана
+    // устанавливаем кратность столбцов и кол-во добавляемых эл. в зависимости от ширины экрана
     if (this._getWindowWidth() > 840 && this._getWindowWidth() <= 1160) {
       this.quantityToAdded = 6;
       multiplicity = 3;

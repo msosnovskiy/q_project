@@ -10,7 +10,6 @@
     /* IE */
 	display: -ms-grid;
   -ms-grid-columns: 1fr 12px 1fr 12px 1fr 12px 1fr;
-  /* -ms-grid-rows: 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr; */
   -ms-grid-rows: 1fr 0px 1fr;
 }
 
@@ -19,14 +18,7 @@
     grid-template-columns: repeat(3, 1fr);
 
     -ms-grid-columns: 1fr 0px 1fr 0px 1fr;
-    /* -ms-grid-rows: 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr; */
     -ms-grid-rows: 1fr 0px 1fr 0px 1fr;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .customers__container {
-    margin: 48px auto;
   }
 }
 
@@ -34,19 +26,22 @@
   .customers__container {
     grid-template-columns: repeat(2, 1fr);
     -ms-grid-columns: 1fr 12px 1fr;
-    /* -ms-grid-rows: 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr 32px 1fr; */
     -ms-grid-rows: 1fr 0px 1fr 0px 1fr 0px 1fr;
   }
 }
 
 @media screen and (max-width:768px) {
   .customers__container {
-    margin-top: 48px;
+    margin: 48px auto 24px;
   }
 }
 
-@media screen and (max-width:540px) {
+
+@media screen and (max-width:580px) {
   .customers__container {
-    grid-row-gap: 12px;
+    grid-row-gap: 16px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }

@@ -24,3 +24,9 @@
     transform: scale(1);
   }
 }
+
+@media screen and (max-width:540px) {
+  .reviews__image {
+    margin: 20px;
+  }
+}

@@ -732,3 +732,11 @@
     -ms-grid-row: 47;
   }
 }
+
+ /* ------ */
+@media screen and (max-width:580px) {
+  .customers__item {
+    padding: 0;
+    margin-bottom: 16px;
+  }
+}

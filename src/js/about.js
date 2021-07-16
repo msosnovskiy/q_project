@@ -5,8 +5,8 @@ import Customers from './components/Customers.js';
 import Map from './components/Map.js';
 import Footer from './components/Footer.js';
 
-const customersSection =  document.querySelector('.customers');
-const customersContainer =  customersSection.querySelector('.customers__container');
+const customersSection = document.querySelector('.customers');
+const customersContainer = customersSection.querySelector('.customers__container');
 const showMoreButton = customersSection.querySelector('.button');
 
 const header = new Header(constants.menuIconWrapper, constants.menuIcon, constants.navigation, constants.page, constants.root);
