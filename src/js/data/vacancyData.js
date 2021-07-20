@@ -90,7 +90,7 @@ const vacancyData = [
         { text: 'ДМС.' },
       ]
     }
-  }
+  },
 ]
 
-export { vacancyData };
+// export { vacancyData };

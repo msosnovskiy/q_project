@@ -171,7 +171,8 @@ module.exports = {
     new CopyWebpackPlugin(
       [
         { from: path.resolve(__dirname, 'src/js/vendor'), to: path.resolve(__dirname, 'dist/js/vendor') },
-        { from: path.resolve(__dirname, 'src/docs'), to: path.resolve(__dirname, 'dist/docs') }
+        { from: path.resolve(__dirname, 'src/docs'), to: path.resolve(__dirname, 'dist/docs') },
+        { from: path.resolve(__dirname, 'src/js/data'), to: path.resolve(__dirname, 'dist/data') },
       ]
     ),
     new WebpackMd5Hash()

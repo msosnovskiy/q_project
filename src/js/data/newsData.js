@@ -631,4 +631,4 @@ const newsData = [
   }
 ]
 
-export { newsData };
+// export { newsData };

@@ -2,13 +2,13 @@ import '../pages/career.css';
 import * as constants from '../js/constants/constants.js';
 import Header from './components/Header.js';
 import Map from './components/Map.js';
-import Spoiler from './components/Spoiler.js';
+// import Spoiler from './components/Spoiler.js';
 import Vacancy from './components/Vacancy.js';
 import VacancyList from './components/VacancyList.js';
 import Footer from './components/Footer.js';
 
-import { vacancySchema } from './data/vacancySchema.js';
-import { vacancyData } from './data/vacancyData.js';
+// import { vacancySchema } from './data/vacancySchema.js';
+// import { vacancyData } from './data/vacancyData.js';
 
 const emptyMessage = 'Нет открытых вакансий';
 

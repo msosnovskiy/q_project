@@ -7,4 +7,4 @@ const vacancySchema =
 }
 
 
-export { vacancySchema }
+// export { vacancySchema }

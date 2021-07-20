@@ -8,7 +8,7 @@ import News from './components/News.js';
 import NewsLists from './components/NewsLists.js';
 import Footer from './components/Footer.js';
 
-import { newsData } from './data/newsData.js';
+// import { newsData } from './data/newsData.js';
 
 const selectionContent = document.querySelector('.selection_content');
 const anchor = document.querySelector('.anchor');

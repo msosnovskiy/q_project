@@ -2,6 +2,7 @@
   width: 100%;
   min-height: 80px;
   height: 100%;
+  line-height: 1.25;
   text-decoration: none;
   color: #009966;
   font-weight: 500;
@@ -26,6 +27,8 @@
 @media screen and (max-width:1024px) {
   .selection__link {
     min-height: 68px;
+    /* for ie  */
+    height: 68px;
     background-color: #f0f5f3;
   }
 }

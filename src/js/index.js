@@ -5,7 +5,7 @@ import Map from './components/Map.js';
 import NewsPreview from './components/NewsPreview.js';
 import NewsPreviewList from './components/NewsPreviewList.js';
 import Footer from './components/Footer.js';
-import { newsData } from './data/newsData.js';
+// import { newsData } from './data/newsData.js';
 
 const newsContent = document.querySelector('.news__content');
 const moreButton = document.querySelector('#moreNews');
