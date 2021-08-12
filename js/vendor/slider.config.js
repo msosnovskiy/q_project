@@ -96,6 +96,7 @@ $(document).ready(function () {
     touchMove: true,
   });
   $('.reviews__slider').slick({
+    lazyLoad: 'ondemand',
     // adaptiveHeight: true,
     // variableWidth: true,
     dots: true,
