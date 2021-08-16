@@ -121,6 +121,7 @@ $(document).ready(function () {
       {
         breakpoint: 891,
         settings: {
+          dots: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           rows: 0,
