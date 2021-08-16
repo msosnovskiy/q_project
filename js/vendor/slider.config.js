@@ -97,17 +97,13 @@ $(document).ready(function () {
   });
   $('.reviews__slider').slick({
     lazyLoad: 'ondemand',
-    // adaptiveHeight: true,
-    // variableWidth: true,
     dots: true,
     speed: 700,
     slidesToShow: 3,
+    slidesToScroll: 1,
     rows: 0,
-    // variableHeight: true,
     centerMode: true,
     centerPadding: 0,
-    // swipe: true,
-    // touchMove: true,
     touchTreshhold: 10,
     appendDots: $('.reviews__dots'),
     responsive: [
