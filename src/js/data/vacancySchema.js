@@ -5,6 +5,3 @@ const vacancySchema =
   responsibilities: 'Обязанности:',
   conditions: 'Условия труда:'
 }
-
-
-// export { vacancySchema }

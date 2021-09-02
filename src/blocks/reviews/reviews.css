@@ -1,5 +1,7 @@
+@import url(./__item/reviews__item.css);
 @import url(./__slider/reviews__slider.css);
 @import url(./__image/reviews__image.css);
+@import url(./__dots/reviews__dots.css);
 
 .reviews {
   padding: 90px 0 52px;

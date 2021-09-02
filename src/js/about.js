@@ -19,3 +19,4 @@ customers.reRender();
 customers.setEventListener();
 map.setEventListener();
 footer.setContent();
+

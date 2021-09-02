@@ -1,0 +1,8 @@
+.reviews__dots {
+}
+
+.reviews__dots .slick-dots {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, 25px );
+
+}

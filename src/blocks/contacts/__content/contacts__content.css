@@ -1,6 +1,6 @@
 .contacts__content {
   padding: 45px;
-  background: linear-gradient(-90deg, #009966 0%, #008855 99.17%);
+  background: #009966;
   display: flex;
   flex-direction: column;
   justify-content: center;

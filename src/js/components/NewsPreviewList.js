@@ -1,10 +1,10 @@
 export default class NewsPreviewList {
-  constructor(container, createNewsItem, moreButton, array, newsPreviewLength) {
+  constructor(container, createNewsItem, moreButton, array) {
     this.container = container;
     this.createNewsItem = createNewsItem;
     this.moreButton = moreButton;
     this.array = array;
-    this.newsPreviewLength = newsPreviewLength;
+    this.newsPreviewLength = 4;
   }
 
   _gettingСurrentYear() {
@@ -31,11 +31,27 @@ export default class NewsPreviewList {
     return this.moreButton.href = `news.html#${this._gettingСurrentYear()}`
   }
 
+  _getWindowWidth() {
+    return document.documentElement.clientWidth;
+  }
+
+  _setNewsPreviewLength() {
+    if (this._getWindowWidth() <= 1300) {
+      this.newsPreviewLength = 4;
+      return this.newsPreviewLength;
+    }
+    else {
+      this.newsPreviewLength = 3;
+      return this.newsPreviewLength;
+    }
+  }
+
   render() {
     this.container.innerHTML = '';
     this._setHrefOnButton();
+    this._setNewsPreviewLength()
     let stepYear = 0;
-
+   
     //проверка на наличие данных за текущий год в массиве, если нет - проверяем следующий год
     while ((this._findArrayByYear(this.array, this._gettingСurrentYear() - stepYear) === undefined)) {
       stepYear++;
@@ -56,5 +72,11 @@ export default class NewsPreviewList {
         }
       };
     }
+  }
+
+  setEventListener() {
+    window.addEventListener(`resize`, event => {
+      this.render();
+    }, false);
   }
 }

@@ -14,3 +14,9 @@
 .spoiler__title_green {
   color: #009966;
 }
+
+@media screen and (max-width:360px) {
+  .spoiler__title {
+    font-size: 20px;
+  }
+}

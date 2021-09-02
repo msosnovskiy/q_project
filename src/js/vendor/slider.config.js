@@ -96,17 +96,14 @@ $(document).ready(function () {
     touchMove: true,
   });
   $('.reviews__slider').slick({
-    // adaptiveHeight: true,
-    // variableWidth: true,
+    lazyLoad: 'ondemand',
     dots: true,
     speed: 700,
     slidesToShow: 3,
+    slidesToScroll: 1,
     rows: 0,
-    // variableHeight: true,
     centerMode: true,
     centerPadding: 0,
-    // swipe: true,
-    // touchMove: true,
     touchTreshhold: 10,
     appendDots: $('.reviews__dots'),
     responsive: [
@@ -124,6 +121,7 @@ $(document).ready(function () {
       {
         breakpoint: 891,
         settings: {
+          dots: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           rows: 0,
@@ -135,6 +133,7 @@ $(document).ready(function () {
 
         breakpoint: 541,
         settings: {
+          dots: false,
           arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1,

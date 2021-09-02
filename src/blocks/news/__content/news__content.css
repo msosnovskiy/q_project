@@ -9,20 +9,22 @@
   -ms-grid-rows: 1fr;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1300px) {
   .news__content{
     grid-gap: 24px;
-    -ms-grid-columns: 1fr 24px 1fr 24px 1fr ;
-    -ms-grid-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr );
+    -ms-grid-columns: 1fr 24px 1fr;
+    -ms-grid-rows: 1fr 24px 1fr;
   }
 }
 
-@media screen and (max-width:1040px) {
+@media screen and (max-width:880px) {
   .news__content{
     grid-template-columns: repeat(1, 1fr );
     margin: 48px auto;
-
     -ms-grid-columns: 1fr;
-    -ms-grid-rows: 1fr 24px 1fr 24px 1fr;
+    -ms-grid-rows: 1fr 24px 1fr 24px 1fr 24px 1fr;
   }
 }
+
+
