@@ -4,7 +4,7 @@ export default class NewsPreviewList {
     this.createNewsItem = createNewsItem;
     this.moreButton = moreButton;
     this.array = array;
-    this.newsPreviewLength = 0;
+    this.newsPreviewLength = 3;
   }
 
   _gettingСurrentYear() {
@@ -32,35 +32,19 @@ export default class NewsPreviewList {
   }
 
   _getWindowWidth() {
-    return document.documentElement.clientWidth;
+    return window.innerWidth;
   }
 
   _setNewsPreviewLength() {
-    // if (this._getWindowWidth() <= 1300 && this._getWindowWidth() >= 880) {
-    if (this._getWindowWidth() <= 1300) {
-      this.newsPreviewLength = 4;
-      return this.newsPreviewLength;
-    }
-    else {
-      this.newsPreviewLength = 3;
-      return this.newsPreviewLength;
-    }
+
+    this._getWindowWidth() > 1300 ? this.newsPreviewLength = 3 : this.newsPreviewLength = 4;
   }
 
   render() {
     this.container.innerHTML = '';
     this._setHrefOnButton();
-    // this._setNewsPreviewLength()
+    this._setNewsPreviewLength()
     let stepYear = 0;
-
-    this.newsPreviewLength = 4;
-    // let lastYearData = this._findArrayByYear(this.array, this._gettingСurrentYear());
-    // if (lastYearData.data.length >= this.newsPreviewLength) {
-    //   let newsPreviewArray = this._sortArrayByDate(lastYearData);
-    //   for (let i = 0; i < this.newsPreviewLength; i++) {
-    //     this._addItem(this.createNewsItem(newsPreviewArray[i].date, newsPreviewArray[i].text)._create());
-    //   }
-    // }
 
     //проверка на наличие данных за текущий год в массиве, если нет - проверяем следующий год
     while ((this._findArrayByYear(this.array, this._gettingСurrentYear() - stepYear) === undefined)) {
