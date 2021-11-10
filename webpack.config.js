@@ -9,6 +9,12 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 
 module.exports = {
+
+  devServer: {
+    host: '192.168.100.19',//your ip address
+    port: 8080,
+    disableHostCheck: true,
+  },
   devtool: 'eval-source-map',
   entry: {
     'index': './src/js/index.js',

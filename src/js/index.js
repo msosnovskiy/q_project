@@ -10,13 +10,13 @@ const newsContent = document.querySelector('.news__content');
 const moreButton = document.querySelector('#moreNews');
 
 const header = new Header(constants.menuIconWrapper, constants.menuIcon, constants.navigation, constants.page, constants.root);
-const map = new Map(constants.ymap, 'contacts__map_cover');
 const createNewsItem = (...arg) => new NewsPreview(...arg);
 const newsPreviewList = new NewsPreviewList(newsContent, createNewsItem, moreButton, newsData)
+const map = new Map(constants.ymap, 'contacts__map_cover');
 const footer = new Footer(constants.footer, constants.footerText);
 
 header.setEventListener();
-map.setEventListener();
 newsPreviewList.render();
 newsPreviewList.setEventListener();
+map.setEventListener();
 footer.setContent();
