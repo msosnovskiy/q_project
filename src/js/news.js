@@ -24,6 +24,7 @@ const footer = new Footer(constants.footer, constants.footerText);
 header.setEventListener();
 map.setEventListener();
 
+newsList.setYearsHref();
 selections.rewritingDefaultArchorId();
 newsList.render();
 selections.setEventListener();

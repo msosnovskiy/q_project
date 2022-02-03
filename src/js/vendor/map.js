@@ -11,7 +11,7 @@ function init() {
     }),
     myPlacemark = new ymaps.Placemark([55.748184, 37.638970], {
       balloonContentHeader: 'Quarta',
-      balloonContentBody: '109240, г. Москва,<br>Москворецкая набережная, дом 2а',
+      balloonContentBody: '109240, г. Москва,<br>Москворецкая набережная, д. 9, стр. 1',
       // balloonContentFooter: 'Телефон <a href="tel:+74959265423">+74959265423</a>',
     },
       {
