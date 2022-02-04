@@ -25,6 +25,7 @@ module.exports = {
     'career': './src/js/career.js',
     'kadry': './src/js/kadry.js',
     'avangard-kadry': './src/js/avangard-kadry.js',
+    'avangard-accounting': './src/js/avangard-accounting.js',
     'government-purchases': './src/js/government-purchases.js',
     'budget': './src/js/budget.js',
     'consolidated-reporting': './src/js/consolidated-reporting.js',
@@ -180,6 +181,12 @@ module.exports = {
       chunks: ['avangard-kadry'],
       template: './src/avangard-kadry.html',
       filename: 'avangard-kadry.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['avangard-accounting'],
+      template: './src/avangard-accounting.html',
+      filename: 'avangard-accounting.html',
     }),
     new CopyWebpackPlugin(
       [
