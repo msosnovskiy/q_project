@@ -1,6 +1,5 @@
 .typical__list {
   font-weight: normal;
-  /* margin: 2px 0 4px; */
   margin: 12px 0;
   padding-left: 24px;
   position: relative;
@@ -15,4 +14,15 @@
   top: 6px;
   left: 0;
   position: absolute;
+}
+
+.typical__list_double {
+  padding-left: 48px;
+  margin: 6px 0;
+}
+
+.typical__list_double::before {
+  background-color: transparent;
+  border: 2px solid #009966;
+  left: 24px;
 }
