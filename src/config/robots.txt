@@ -3,6 +3,8 @@ Disallow: /consolidated-reporting.html
 Disallow: /government-purchases.html
 Disallow: /budget.html
 Disallow: /kadry.html
+Disallow: /avangard-kadry.html
+Disallow: /avangard-accounting.html
 Disallow:
 Sitemap: http://quarta.su/sitemap.xml
 Host: quarta.su

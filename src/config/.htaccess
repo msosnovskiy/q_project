@@ -35,3 +35,15 @@ RewriteRule ^budget/$ budget.html [NC]
 RewriteRule ^kadry$ kadry.html [NC]
 RewriteRule ^kadry/$ kadry.html [NC]
 
+RewriteRule ^consolidated-reporting$ consolidated-reporting.html [NC]
+RewriteRule ^consolidated-reporting/$ consolidated-reporting.html [NC]
+
+RewriteRule ^government-purchases$ government-purchases.html [NC]
+RewriteRule ^government-purchases/$ government-purchases.html [NC]
+
+RewriteRule ^avangard-accounting$ avangard-accounting.html [NC]
+RewriteRule ^avangard-accounting/$ avangard-accounting.html [NC]
+
+RewriteRule ^avangard-kadry$ avangard-kadry.html [NC]
+RewriteRule ^avangard-kadry/$ avangard-kadry.html [NC]
+
