@@ -29,6 +29,7 @@ module.exports = {
     'government-purchases': './src/js/government-purchases.js',
     'budget': './src/js/budget.js',
     'consolidated-reporting': './src/js/consolidated-reporting.js',
+    'digital-platform-avangard': './src/js/digital-platform-avangard.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -187,6 +188,12 @@ module.exports = {
       chunks: ['avangard-accounting'],
       template: './src/avangard-accounting.html',
       filename: 'avangard-accounting.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['digital-platform-avangard'],
+      template: './src/digital-platform-avangard.html',
+      filename: 'digital-platform-avangard.html',
     }),
     new CopyWebpackPlugin(
       [

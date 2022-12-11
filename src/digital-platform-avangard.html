@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quarta - Главная</title>
+  <title>Quarta - Учет кадров</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
   <link rel="apple-touch-icon" sizes="180x180" href="<%=require('./images/apple-touch-icon.png')%>">
   <link rel="icon" type="image/png" sizes="32x32" href="<%=require('./images/favicon-32x32.png')%>">
@@ -14,18 +14,20 @@
     content="Компания «Кварта» осуществляет деятельность, связанную с предоставлением услуг в области информационных технологий и системной интеграции.">
 </head>
 
-
 <body class="root">
   <div class="page">
     <header class="header backgrond background_grey">
       <div class="header__content">
-        <svg class="logo">
-          <use xlink:href="#logo"></use>
-        </svg>
+        <a class="logo" aria-label="На главную" href="index.html">
+          <svg class="logo">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
         <nav class="header__navigation" aria-label="Основное меню">
           <ul class="header__list">
             <li class="header__list-item"><a class="header__link" href="about.html">о&nbsp;нас</a></li>
-            <li class="header__list-item"><a class="header__link" href="solutions.html">решения</a></li>
+            <li class="header__list-item"><a class="header__link header__link_active" href="solutions.html">решения</a>
+            </li>
             <li class="header__list-item"><a class="header__link" href="services.html">услуги</a></li>
             <li class="header__list-item"><a class="header__link" href="news.html">пресс&nbsp;центр</a></li>
             <li class="header__list-item"><a class="header__link" href="career.html">карьера</a></li>
@@ -39,220 +41,27 @@
       </div>
     </header>
 
-    <section class="banner background background_img background_img_index">
+    <section class="typical">
       <div class="container">
-        <p class="banner__text">каждому нужен особый подход</p>
-        <p class="banner__text">мы всегда найдём способ решить задачу лучше</p>
-        <p class="banner__text">наши знания, умения и возможности к вашим услугам</p>
-      </div>
-    </section>
-
-    <section class="solutions backgrond background_light-green">
-      <div class="container">
-        <h2 class="title">решения</h2>
-        <div class="icon">
-          <div class="icon__wrapper">
-            <a href="solutions.html#personnel" class="icon__link">
-              <div class="icon__container">
-                <img src="<%=require('./images/personnel.svg')%>" alt="иконка" class="icon__img">
-                <p class="icon__text">Управление персоналом</p>
-              </div>
-            </a>
-          </div>
-          <div class="icon__wrapper">
-            <a href="solutions.html#finance" class="icon__link">
-              <div class="icon__container">
-                <img src="<%=require('./images/finance.svg')%>" alt="иконка" class="icon__img">
-                <p class="icon__text">Управление<span class="span span_br"></span>финансами</p>
-              </div>
-            </a>
-          </div>
-          <div class="icon__wrapper">
-            <a href="solutions.html#resources" class="icon__link">
-              <div class="icon__container">
-                <img src="<%=require('./images/resources.svg')%>" alt="иконка" class="icon__img">
-                <p class="icon__text">Управление<span class="span span_br"></span>ресурсами</p>
-              </div>
-            </a>
-          </div>
-          <div class="icon__wrapper">
-            <a href="solutions.html#analytics" class="icon__link">
-              <div class="icon__container">
-                <img src="<%=require('./images/analytics.svg')%>" alt="иконка" class="icon__img">
-                <p class="icon__text">Аналитика</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="indicators">
-      <div class="container">
-        <div class="indicators__content">
-          <div class="indicators__item">
-            <p class="indicators__number">500+</p>
-            <p class="indicators__text">свыше 500 реализованных проектов</p>
-          </div>
-          <div class="indicators__item">
-            <p class="indicators__number">250+</p>
-            <p class="indicators__text">команда высококвалифицированных специалистов</p>
-          </div>
-          <div class="indicators__item">
-            <p class="indicators__number">30+</p>
-            <p class="indicators__text">более 30 лет <span class="span span_br"></span>на IT рынке</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="services backgrond background_light-green">
-      <div class="container">
-        <h2 class="title">услуги</h2>
-        <div class="icon">
-          <div class="icon__wrapper">
-            <a href="services.html#development" class="icon__link">
-              <div class="icon__container">
-                <img src="<%=require('./images/development.svg')%>" alt="иконка" class="icon__img">
-                <p class="icon__text">Разработка и внедрение</p>
-              </div>
-            </a>
-          </div>
-          <div class="icon__wrapper">
-            <a href="services.html#outsourcing" class="icon__link">
-              <div class="icon__container">
-                <img src="<%=require('./images/outsourcing.svg')%>" alt="иконка" class="icon__img">
-                <p class="icon__text">Аутсорсинг IT инфраструктуры</p>
-              </div>
-            </a>
-          </div>
-          <div class="icon__wrapper">
-            <a href="services.html#integration" class="icon__link">
-              <div class="icon__container">
-                <img src="<%=require('./images/integration.svg')%>" alt="иконка" class="icon__img">
-                <p class="icon__text">Системная&nbsp;интеграция и дистрибуция</p>
-              </div>
-            </a>
-          </div>
-          <div class="icon__wrapper">
-            <a href="services.html#protection" class="icon__link">
-              <div class="icon__container">
-                <img src="<%=require('./images/protection.svg')%>" alt="иконка" class="icon__img">
-                <p class="icon__text">Внедрение средств защиты&nbsp;информации</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="customers">
-      <div class="container">
-        <h2 class="title">наши заказчики</h2>
-        <div class="slider__touch-img slider__touch-img_customers">
-        </div>
-        <div class="customers__slider">
-          <div class="customers__item">
-            <img src="<%=require('./images/aprf.png')%>" alt="Аппарат Правительства" class="customers__image">
-            <p class="customers__name">Аппарат Правительства Российской Федерации</p>
-          </div>
-          <div class="customers__item">
-            <img src="<%=require('./images/sf.png')%>" alt="Совет Федерации" class="customers__image">
-            <p class="customers__name">Совет Федерации Федерального Собрания Российской Федерации</p>
-          </div>
-          <div class="customers__item">
-            <img src="<%=require('./images/gd.png')%>" alt="Государственная Дума" class="customers__image">
-            <p class="customers__name">Государственная Дума Федерального Собрания Российской Федерации</p>
-          </div>
-          <div class="customers__item">
-            <img src="<%=require('./images/ud.png')%>" alt="Управление делами Президента" class="customers__image">
-            <p class="customers__name">Управление делами Президента Российской Федерации</p>
-          </div>
-          <div class="customers__item">
-            <img loading="lazy" src="<%=require('./images/mid.png')%>" alt="Министерство иностранных дел" class="customers__image">
-            <p class="customers__name">Министерство иностранных дел Российской Федерации</p>
-          </div>
-          <div class="customers__item">
-            <img loading="lazy" src="<%=require('./images/mincrsmk.png')%>" alt="Министерство цифрового развития" class="customers__image">
-            <p class="customers__name">Министерство цифрового развития, связи и массовых коммуникаций Российской Федерации</p>
-          </div>
-          <div class="customers__item">
-            <img loading="lazy" src="<%=require('./images/mer.png')%>" alt="Министерство экономического развития"
-              class="customers__image">
-            <p class="customers__name">Министерство экономического развития Российской Федерации</p>
-          </div>
-          <div class="customers__item">
-            <img loading="lazy" src="<%=require('./images/mintrans.png')%>" alt="Министерство транспорта" class="customers__image">
-            <p class="customers__name">Министерство транспорта Российской Федерации</p>
-          </div>
-
-          <div class="customers__item">
-            <img loading="lazy" src="<%=require('./images/minpromtorg.png')%>" alt="Министерство промышленности и торговли" class="customers__image">
-            <p class="customers__name">Министерство промышленности и торговли Российской Федерации</p>
-          </div>
-          <div class="customers__item">
-            <img loading="lazy" src="<%=require('./images/minobrnauki.png')%>" alt="Министерство образования и науки" class="customers__image">
-            <p class="customers__name">Министерства науки и высшего образования Российской Федерации</p>
-          </div>
-          <div class="customers__item">
-            <img loading="lazy" src="<%=require('./images/eec.png')%>" alt="Евразийская экономическая комиссия" class="customers__image">
-            <p class="customers__name">Евразийская экономическая комиссия</p>
-          </div>
-          <div class="customers__item">
-            <img loading="lazy" src="<%=require('./images/fns.png')%>" alt="Федеральная налоговая служба" class="customers__image">
-            <p class="customers__name">Федеральная налоговая служба</p>
-          </div>
-          <div class="customers__item">
-            <img loading="lazy" src="<%=require('./images/ufms.png')%>" alt="Федеральная Миграционная Служба" class="customers__image">
-            <p class="customers__name">Федеральная Миграционная Служба</p>
-          </div>
-          <div class="customers__item">
-            <img loading="lazy" src="<%=require('./images/fas.png')%>" alt="Федеральная антимонопольная служба" class="customers__image">
-            <p class="customers__name">Федеральная антимонопольная служба</p>
-          </div>
-          <div class="customers__item">
-            <img loading="lazy" src="<%=require('./images/rostransnadzor.png')%>" alt="ространснадзор" class="customers__image">
-            <p class="customers__name">Федеральная служба по&nbsp;надзору в&nbsp;сфере транспорта</p>
-          </div>
-          <div class="customers__item">
-            <img loading="lazy" src="<%=require('./images/rosmorrechflot.png')%>" alt="росморречфлот" class="customers__image">
-            <p class="customers__name">Федеральное агентство морского и речного транспорта</p>
-          </div>
-        </div>
-
-        <a href="about.html#customers" class="button">Подробнее</a>
-      </div>
-    </section>
-
-    <section class="news backgrond background_light-green">
-      <div class="container">
-        <h2 class="title">новости</h2>
-        <div class="news__content">
-        </div>
-        <a href="news.html" id="moreNews" class="button">Подробнее</a>
-      </div>
-    </section>
-
-    <section class="partners">
-      <div class="container">
-        <h2 class="title">наши партнеры</h2>
-        <div class="partners__content">
-          <div class="partners__wrapper">
-            <a href="https://infotecs.ru/" target="_blank" rel="noopener" class="partners__link"><img src="<%=require('./images/infotecs.png')%>" alt="логотип Инфотекс"
-                class="partners__logo"></a>
-          </div>
-          <div class="partners__wrapper">
-            <a href="https://www.usergate.com/ru" target="_blank" rel="noopener" class="partners__link"><img src="<%=require('./images/usergate.png')%>" alt="логотип Юзергейт"
-                class="partners__logo"></a>
-          </div>
-          <div class="partners__wrapper">
-            <a href="https://smpbank.ru/" target="_blank" rel="noopener" class="partners__link"><img src="<%=require('./images/smp.png')%>" alt="логотип СМП банка"
-                class="partners__logo"></a>
-          </div>
-          <div class="partners__wrapper">
-            <a href="https://1c.ru/" target="_blank" rel="noopener" class="partners__link"><img src="<%=require('./images/1c.png')%>" alt="логотип 1С"
-                class="partners__logo"></a>
-          </div>
+        <div class="typical__wrapper">
+          <h1 class="typical__title typical__title_main">Цифровая платформа<span class="span span_br"></span>«Авангард»</h1>
+          <p class="typical__text typical__text_frame">Цифровая платформа &laquo;Авангард&raquo; представляет собой решение с&nbsp;применением современных веб-технологий для построения информационных систем, обеспечивающих автоматизацию комплексных бизнес-процессов.</h2>
+          <h2 class="typical__title">Применяемые подходы:</h2>
+          <p class="typical__list">микросервисная архитектура;</p>
+          <p class="typical__list">динамическая компоновка интерфейса из подключаемых сервисов;</p>
+          <p class="typical__list">подключение сторонних информационных систем в качестве сервисов, сохраняя при этом общие принципы функционирования платформы;</p>
+          <p class="typical__list">единая точка входа (система аутентификации на базе протокола OAuth 2.0);</p>
+          <p class="typical__list">единая среда управления правами доступа пользователей к функционалу подключенных сервисов;</p>
+          <p class="typical__list">типовой графический интерфейс и общие способы взаимодействия с ним (UI и UX) в рамках всех подключаемых сервисов;</p>
+          <p class="typical__list">повторное использование кодовой базы за счёт библиотек фронтенд компонентов (npm-пакетов) и подключаемых бэкенд модулей (git-сабмодулей).</p>
+          <h2 class="typical__title">Преимущества:</h2>
+          <p class="typical__list">повышение эффективности труда работников благодаря использованию единого информационного пространства с типовыми интерфейсными решениями;</p>
+          <p class="typical__list">обеспечение возможности доработки функционала поставляемых готовых сервисов под специфические требования Заказчика;</p>
+          <p class="typical__list">поэтапная модернизация информационного пространства организации без необходимости срочного вывода из эксплуатации устаревших информационных систем;</p>
+          <p class="typical__list">ускоренная разработка новых сервисов за счёт повторного использования кодовой базы.</p>
+         
+          <a href="./docs/Digital-platform-Avangard-RP.pdf" target="_blank" rel="noopener" class="typical__link">Руководство пользователя</a>
+          <a href="./docs/Digital-platform-Avangard-RSP.pdf" target="_blank" rel="noopener" class="typical__link">Руководство системного программиста</a>
         </div>
       </div>
     </section>
@@ -352,14 +161,11 @@
       </svg>
     </div>
 
-    <script src="js/vendor/jquery.min.js" type="text/javascript"></script>
-    <script src="js/vendor/slick.min.js" type="text/javascript"></script>
-    <script src="js/vendor/slider.config.js" type="text/javascript"></script>
-    <script src="data/newsData.js"></script>
     <script src="<%= htmlWebpackPlugin.files.js %>" type="text/javascript"></script>
     <script defer src="https://api-maps.yandex.ru/2.1/?load=package.map&lang=ru_RU&amp;apikey=1c290042-945c-48d6-9e70-faf80a0b7386" type="text/javascript"></script>
     <script defer src="js/vendor/map.js"></script>
   </div>
+
 </body>
 
 </html>

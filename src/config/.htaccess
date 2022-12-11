@@ -47,3 +47,6 @@ RewriteRule ^avangard-accounting/$ avangard-accounting.html [NC]
 RewriteRule ^avangard-kadry$ avangard-kadry.html [NC]
 RewriteRule ^avangard-kadry/$ avangard-kadry.html [NC]
 
+RewriteRule ^digital-platform-avangard$ digital-platform-avangard.html [NC]
+RewriteRule ^digital-platform-avangard/$ digital-platform-avangard.html [NC]
+

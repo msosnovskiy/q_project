@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
-		<loc>http://quarta.su/</loc>
+		<loc>https://quarta.su/</loc>
 		<lastmod>2019-06-24T07:43:25+00:00</lastmod>
 	</url>
 	<url>
-		<loc>http://quarta.su/about.html</loc>
+		<loc>https://quarta.su/about.html</loc>
 		<lastmod>2019-06-24T07:43:26+00:00</lastmod>
 	</url>
 	<url>
-		<loc>http://quarta.su/solutions.html</loc>
+		<loc>https://quarta.su/solutions.html</loc>
 		<lastmod>2019-06-24T07:43:26+00:00</lastmod>
 	</url>
 	<url>
-		<loc>http://quarta.su/services.html</loc>
+		<loc>https://quarta.su/services.html</loc>
 		<lastmod>2019-06-24T07:43:27+00:00</lastmod>
 	</url>
 	<url>
-		<loc>http://quarta.su/history.html</loc>
+		<loc>https://quarta.su/history.html</loc>
 		<lastmod>2019-06-24T07:43:28+00:00</lastmod>
 	</url>
 	<url>
-		<loc>http://quarta.su/career.html</loc>
+		<loc>https://quarta.su/career.html</loc>
 		<lastmod>2019-06-24T07:43:28+00:00</lastmod>
 	</url>
 </urlset>
