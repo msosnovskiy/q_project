@@ -14,23 +14,23 @@
 
 .spoiler__button::before {
   content: "";
-  width: 22px;
+  width: 16px;
   height: 2px;
   background-color: #009966;
   position: absolute;
-  left: 3px;
+  left: 6px;
   top: 13px;
   transition-duration: .2s;
 }
 
 .spoiler__button::after {
   content: "";
-  width: 22px;
+  width: 16px;
   height: 2px;
   background-color: #009966;
   transform: rotate(90deg);
   position: absolute;
-  left: 3px;
+  left: 6px;
   top: 13px;
   transition-duration: .2s;
 }

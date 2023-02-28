@@ -1,8 +1,19 @@
 .logo {
+  width: 200px;
+  height: 48px;
+  margin-right: 40px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+
+/* ---only logo---  */
+/* .logo {
   width: 124px;
   height: 48px;
   margin-right: 16px;
   margin: 0;
   padding: 0;
   z-index: 1;
-}
+} */

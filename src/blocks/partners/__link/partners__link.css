@@ -7,5 +7,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: default;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.partners__link:hover {
+  background-color: #F0F5F3;
 }
