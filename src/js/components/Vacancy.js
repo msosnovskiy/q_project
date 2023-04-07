@@ -1,11 +1,13 @@
 export default class Vacancy {
-  constructor(vacancy, experienceSchema, experienceText, employmentText, qualificationSchema, qualificationData, responsibilitiesSchema, responsibilitiesData, conditionsSchema, conditionsData) {
+  constructor(vacancy, experienceSchema, experienceText, employmentText, qualificationSchema, qualificationData, desirableSchema, desirableData, responsibilitiesSchema, responsibilitiesData, conditionsSchema, conditionsData) {
     this.vacancy = vacancy;
     this.experienceSchema = experienceSchema;
     this.experienceText = experienceText;
     this.employmentText = employmentText;
     this.qualificationSchema = qualificationSchema;
     this.qualificationData = qualificationData;
+    this.desirableSchema = desirableSchema;
+    this.desirableData = desirableData;
     this.responsibilitiesSchema = responsibilitiesSchema;
     this.responsibilitiesData = responsibilitiesData;
     this.conditionsSchema = conditionsSchema;
@@ -28,21 +30,22 @@ export default class Vacancy {
   }
 
   _create() {
-    const spoilerItem = this._createDOMElement('div', 'spoiler__item')
+    const spoilerItem = this._createDOMElement('div', 'spoiler__item');
     spoilerItem.classList.add('spoiler__item_white');
-    const wrapper = this._createDOMElement('div', 'spoiler__wrapper')
+    const wrapper = this._createDOMElement('div', 'spoiler__wrapper');
     wrapper.classList.add('spoiler__wrapper_white');
-    const vacancy = this._createDOMElement('h3', 'spoiler__title')
-    const spoilerButton = this._createDOMElement('button', 'spoiler__button')
-    const content = this._createDOMElement('div', 'spoiler__content')
+    const vacancy = this._createDOMElement('h3', 'spoiler__title');
+    const spoilerButton = this._createDOMElement('button', 'spoiler__button');
+    const content = this._createDOMElement('div', 'spoiler__content');
     content.classList.add('spoiler__content_white');
-    const experience = this._createDOMElement('h3', 'spoiler__subtitle')
-    const experienceYears = this._createDOMElement('span', 'span')
+    const experience = this._createDOMElement('h3', 'spoiler__subtitle');
+    const experienceYears = this._createDOMElement('span', 'span');
     experienceYears.classList.add('span_light');
-    const employment = this._createDOMElement('p', 'spoiler__text')
-    const qualification = this._createDOMElement('h3', 'spoiler__subtitle')
-    const responsibilities = this._createDOMElement('h3', 'spoiler__subtitle')
-    const conditions = this._createDOMElement('h3', 'spoiler__subtitle')
+    const employment = this._createDOMElement('p', 'spoiler__text');
+    const qualification = this._createDOMElement('h3', 'spoiler__subtitle');
+    const desirable = this._createDOMElement('h3', 'spoiler__subtitle');
+    const responsibilities = this._createDOMElement('h3', 'spoiler__subtitle');
+    const conditions = this._createDOMElement('h3', 'spoiler__subtitle');
 
     this.wrapper = wrapper;
     this.button = spoilerButton;
@@ -66,17 +69,20 @@ export default class Vacancy {
 
     content.appendChild(qualification);
     qualification.textContent = this.qualificationSchema;
-
     this._createDOMElements(this.qualificationData, 'p', 'spoiler__list', this.content);
 
+    if (this.desirableData.length > 0) {
+      content.appendChild(desirable);
+      desirable.textContent = this.desirableSchema;
+      this._createDOMElements(this.desirableData, 'p', 'spoiler__list', this.content);
+    }
+  
     content.appendChild(responsibilities);
     responsibilities.textContent = this.responsibilitiesSchema;
-
     this._createDOMElements(this.responsibilitiesData, 'p', 'spoiler__list', this.content);
 
     content.appendChild(conditions);
     conditions.textContent = this.conditionsSchema;
-
     this._createDOMElements(this.conditionsData, 'p', 'spoiler__list', this.content);
 
     this._setEventListener();

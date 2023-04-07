@@ -15,7 +15,7 @@ export default class VacancyList {
 
     if (this.array.length > 0) {
       this.array.forEach((item) => {
-        this._addItem(this.createVacancy(item.vacancy, this.vacancySchema.experience, item.experience, item.employment, this.vacancySchema.qualification, item.qualification.data, this.vacancySchema.responsibilities, item.responsibilities.data, this.vacancySchema.conditions, item.conditions.data)._create());
+        this._addItem(this.createVacancy(item.vacancy, this.vacancySchema.experience, item.experience, item.employment, this.vacancySchema.qualification, item.qualification.data, this.vacancySchema.desirable, item.desirable.data, this.vacancySchema.responsibilities, item.responsibilities.data, this.vacancySchema.conditions, item.conditions.data)._create());
       })
     }
     else {
