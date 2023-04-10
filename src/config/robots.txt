@@ -6,6 +6,7 @@ Disallow: /kadry.html
 Disallow: /avangard-kadry.html
 Disallow: /avangard-accounting.html
 Disallow: /digital-platform-avangard.html
+Disallow: /avangard-work-space.html
 Disallow:
 Sitemap: https://quarta.su/sitemap.xml
 Host: quarta.su

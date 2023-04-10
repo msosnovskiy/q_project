@@ -50,3 +50,6 @@ RewriteRule ^avangard-kadry/$ avangard-kadry.html [NC]
 RewriteRule ^digital-platform-avangard$ digital-platform-avangard.html [NC]
 RewriteRule ^digital-platform-avangard/$ digital-platform-avangard.html [NC]
 
+RewriteRule ^avangard-work-space$ avangard-work-space.html [NC]
+RewriteRule ^avangard-work-space/$ avangard-work-space.html [NC]
+
