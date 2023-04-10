@@ -30,6 +30,7 @@ module.exports = {
     'budget': './src/js/budget.js',
     'consolidated-reporting': './src/js/consolidated-reporting.js',
     'digital-platform-avangard': './src/js/digital-platform-avangard.js',
+    'avangard-work-space': './src/js/avangard-work-space.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -194,6 +195,12 @@ module.exports = {
       chunks: ['digital-platform-avangard'],
       template: './src/digital-platform-avangard.html',
       filename: 'digital-platform-avangard.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      chunks: ['avangard-work-space'],
+      template: './src/avangard-work-space.html',
+      filename: 'avangard-work-space.html',
     }),
     new CopyWebpackPlugin(
       [
